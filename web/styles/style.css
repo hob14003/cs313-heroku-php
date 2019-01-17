@@ -11,6 +11,14 @@ li a:hover {
     color: white;
   }
 
+  #dateContainer
+  {
+    font-family: 'Titillium Web', sans-serif;
+    background-color:white;
+    border-radius:12px;
+    text-align:center;
+    margin:1em;
+  }
 
 .container
 {
