@@ -40,7 +40,9 @@ echo "     <script>
 
      </div>";
 
- echo "<div class=\"container\"> <img src=\"photo/profile.jpg\" alt=\"snowboarding photo\"> </div>"    
+ echo "<div class=\"container\">";
+ echo "<img src=\"photo/profile.jpg\" alt=\"snowboarding photo\">";
+ echo "</div>";    
 
  echo "</body>";
  echo "</html>";
