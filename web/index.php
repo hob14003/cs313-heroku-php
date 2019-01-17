@@ -1,6 +1,6 @@
 <?php
 
-echo "<!doctype html>
+echo "
 <html>
 <head>
     <Title> Jesse Hillman - Aspiring Developer </Title>
