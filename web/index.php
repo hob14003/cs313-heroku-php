@@ -1,23 +1,22 @@
 <?php
 
-echo "
-<html>
-<head>
-    <Title> Jesse Hillman - Aspiring Developer </Title>
+echo "<html>";
+// <head>
+//     <Title> Jesse Hillman - Aspiring Developer </Title>
 
-    <link rel="stylesheet" href="styles/style.css">
+//     <link rel="stylesheet" href="styles/style.css">
 
-    <script>
+//     <script>
     
-    </script>
-</head> ";
+//     </script>
+// </head> ";
 
-echo "<body>";
+//  echo "<body>";
 
     
 
 
-//     echo "<nav>
+//      echo "<nav>
 //         <ul>
 //         <li><a href="index.html">Home</a></li>
 //         <li><a href="assignments.html">Assignments</a></li>
@@ -40,9 +39,9 @@ echo "<body>";
 //     </div>
 // ";
 
-echo "</body>";
+// echo "</body>";
 
-echo "</html>";
+// echo "</html>";
 
 
 ?>
