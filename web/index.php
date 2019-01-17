@@ -1,8 +1,8 @@
 <?php
 
 echo "<html>";
-// <head>
-//     <Title> Jesse Hillman - Aspiring Developer </Title>
+echo "<head>";
+echo "<Title> Jesse Hillman - Aspiring Developer </Title>";
 
 //     <link rel="stylesheet" href="styles/style.css">
 
