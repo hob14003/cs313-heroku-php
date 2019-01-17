@@ -4,7 +4,7 @@ echo "<html>";
 echo "<head>";
 echo "<Title> Jesse Hillman - Aspiring Developer </Title>";
 
-//     <link rel="stylesheet" href="styles/style.css">
+echo  "<link rel="stylesheet" href="styles/style.css">";
 
 //     <script>
     
