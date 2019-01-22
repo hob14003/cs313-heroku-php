@@ -4,7 +4,7 @@
 Welcome <?php echo $_POST["name"]; ?><br>
 
 <?php $useremail = $_POST["email"]; ?>
-Your email address is: <?php echo "<a href=\"mailto:$useremail\""; ?><br>
+Your email address is: <?php echo "<a href=\"mailto:$useremail\" > $useremail </a>"; ?><br>
 
 
 Your major is: <?php echo $_POST["choices"]; ?><br>
