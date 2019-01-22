@@ -12,6 +12,7 @@ li a:hover {
   }
 
 
+
 .container
 {
     font-family: 'Titillium Web', sans-serif;
@@ -42,11 +43,17 @@ ul {
 
   #activitiesList
   {
-      position: relative;
+      position:static;
       background-color:#81D4FA;
-
+      display:flex;
+      flex-direction: column;
   }
 
+  .list
+{
+    background-color:#81D4FA;
+    color: white;
+}
 
   #firstContainer
   {
