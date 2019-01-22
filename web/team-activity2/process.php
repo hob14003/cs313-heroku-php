@@ -11,6 +11,8 @@ Your major is: <?php echo $_POST["choices"]; ?><br>
 
 Comments: <?php echo $_POST["summary"]; ?><br>
 
+Continents we've visited: 
+<?php if( isset($_POST['northA']) ) { echo $_POST['northA']; } ?><br>
 
 </body>
 </html>
