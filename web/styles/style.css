@@ -40,6 +40,12 @@ ul {
   }
 
 
+  #activitiesList
+  {
+      position: relative;
+  }
+
+
   #firstContainer
   {
       margin-top:3em;
