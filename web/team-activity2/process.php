@@ -1,12 +1,9 @@
 <html>
 <body>
 
-<?php
-echo "Name:" + $_POST["name"];
-echo "Your email address is: " + $_POST["email"];
+Welcome <?php echo $_POST["name"]; ?><br>
+Your email address is: <?php echo $_POST["email"]; ?>
 
 
-?>
 </body>
-
 </html>
