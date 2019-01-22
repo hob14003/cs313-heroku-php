@@ -2,11 +2,11 @@
 <body>
 
 Welcome <?php echo $_POST["name"]; ?><br>
-Your email address is: <?php echo $_POST["email"]; ?>
+Your email address is: <?php echo $_POST["email"]; ?><br>
 
-Your major is: <?php echo $_POST["choices"]; ?>
+Your major is: <?php echo $_POST["choices"]; ?><br>
 
-Comments: <?php echo $_POST["summary"]; ?>
+Comments: <?php echo $_POST["summary"]; ?><br>
 
 
 </body>
