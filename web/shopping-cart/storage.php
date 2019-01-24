@@ -1,7 +1,7 @@
 <?php
 
 // navigation bar
-$navigation = array("Browse","View Cart", "Checkout");
+$navigation = array("Browse","Cart", "Checkout");
 
 
 // keep a record of all the items to browse
