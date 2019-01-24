@@ -11,9 +11,9 @@
         <div class="container">
          <form>
              <input type="radio" name="deck" value="Red skate deck"> 
-             <?php $test = "testing"; include "shop.php"; echo "<p>$test</p>"; ?>
-             <input type="radio" name="deck" value ="Blue skate deck"> Blue Skate Deck <?php echo $skateboardDeck[1]; ?>
-             <input type="radio" name="deck" value =" Yellow skate deck"> Yellow skate Deck <?php echo $skateboardDeck[2]; ?>
+             <?php $test = "testing"; include "shop.php"; echo $skateboardDeck[3]; ?>
+             <input type="radio" name="deck" value ="Blue skate deck"> <?php echo $skateboardDeck[1]; ?>
+             <input type="radio" name="deck" value =" Yellow skate deck"> <?php echo $skateboardDeck[2]; ?>
              
 
          </form>
