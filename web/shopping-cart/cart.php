@@ -18,10 +18,10 @@
     // if there is
      if (array_key_exists('cartItems',$_SESSION) && !empty($_SESSION['cartItems']))
      {
-        
+        // display each item
          foreach($_SESSION['cartItems'] as $item)
          {
-            echo $item;
+            echo "<div class=\"container\"> $item </div>";
          }
 
      }
