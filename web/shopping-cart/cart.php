@@ -25,7 +25,10 @@
         //  echo $currentCart;
         //         echo $cartItem;
 
-         
+         foreach($_SESSION['cartItems'] as $item)
+         {
+            echo $item;
+         }
 
      }
 
