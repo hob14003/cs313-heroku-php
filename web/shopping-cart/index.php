@@ -15,14 +15,11 @@
          <form>
              <?php include "storage.php";      
              
-    foreach($skateboardDeck as $deck)
-    {
-        echo "<input type=\"radio\" name=\"deck\" value=\"$deck skate deck\"> $deck <br>";
-    }
-    
- 
-    
-    ?>
+                foreach($skateboardDeck as $deck)
+                {
+                echo "<input type=\"checkbox\" name=\"$deck\" value=\"$deck skate deck\"> $deck <br>";
+                }
+             ?>
               
          </form>
         </div>
