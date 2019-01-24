@@ -8,9 +8,12 @@
         <h1>Browse</h1>
 
         <div class="container">
-         <p>   <?php echo $skateboardDeck;
-            
-            ?> </p>
+         <form>
+             <input type="radio" name="deck" value="Red skate deck"> Red Skate Deck <?php echo $skateboardDeck[0]; ?>
+             <input type="radio" name="deck" value ="Blue skate deck"> Blue Skate Deck <?php echo $skateboardDeck[1]; ?>
+             <input type="radio" name="deck" value =" Yellow skate deck"> Yellow skate Deck <?php echo $skateboardDeck[2]; ?>
+         
+         </form>
         </div>
 
     </body>
