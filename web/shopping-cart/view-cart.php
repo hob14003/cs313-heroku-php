@@ -12,7 +12,7 @@ array_push($cartItems,$item);
 }
 
 
-$_SESSION["cartItems"] += $cartItems;
+$_SESSION["cartItems"] = $cartItems;
 print_r($_SESSION);
 
 ?>
