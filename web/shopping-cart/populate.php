@@ -1,15 +1,15 @@
 <?php
 include "storage.php";
 
-echo "<nav>";
+echo "<nav> <ul>";
 foreach($navigation as $navItem)
 {
-  //  echo  "<ul><li><a href=\"$navItem.php\">$navItem</a></li></ul><br>";
+  echo  "<li><a href=\"$navItem.php\">$navItem</a></li><br>";
 
   echo "Hello World";
 
 }
 
-echo "</nav>";
+echo "<ul></nav>";
 
  ?>
