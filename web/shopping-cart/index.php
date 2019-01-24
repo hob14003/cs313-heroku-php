@@ -10,7 +10,7 @@
 
         <div class="container">
          <form>
-             <?php include "populate.php" ?>
+             <?php include "populate.php"; showItems(); ?>
               
          </form>
         </div>
