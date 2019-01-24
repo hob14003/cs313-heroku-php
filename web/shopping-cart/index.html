@@ -1,23 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        
-    </head>
-    <body>
+<?php
 
-        <h1>Browse</h1>
+include "shop.php";
+echo "yup";
+echo $test;
 
-        <div class="container">
-         <form>
-             <input type="radio" name="deck" value="Red skate deck"> 
-             <?php $test = "testing"; include "shop.php"; echo "<p>$test</p>"; ?>
-             <input type="radio" name="deck" value ="Blue skate deck"> Blue Skate Deck <?php echo $skateboardDeck[1]; ?>
-             <input type="radio" name="deck" value =" Yellow skate deck"> Yellow skate Deck <?php echo $skateboardDeck[2]; ?>
-             
+echo "$test";
 
-         </form>
-        </div>
-
-    </body>
-</html>
+?>
