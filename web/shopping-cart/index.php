@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 
 <html>
     <head>
@@ -14,12 +13,12 @@
     </div>
 
         <div class="container">
-         <form action="checkout.php" method="post">
+         <form action="view-cart.php" method="post">
              <?php include "storage.php";      
              
                 foreach($skateboardDeck as $deck)
                 {
-                echo "<input type=\"checkbox\" name=\"$deck\" value=\"$deck skate deck\"> $deck <br>";
+                echo "<input type=\"checkbox\" name=\"purchasedItems[]\" value=\"$deck skate deck\"> $deck <br>";
                 }
              ?>
               <input type="submit" value="Checkout">
