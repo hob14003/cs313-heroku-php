@@ -21,7 +21,7 @@
     <div class="buffer"> </div>
 
     <div class="container">
-        <h1>Browse</h1>
+        <h1>We sell Skateboard decks</h1>
     </div>
 
         <div class="container">
