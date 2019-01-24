@@ -12,6 +12,11 @@ li a:hover {
   }
 
 
+  form
+  {
+      display:flex;
+      flex-direction:column;
+  }
 
 .container
 {
