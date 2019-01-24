@@ -21,7 +21,7 @@
         //     // display it
         print_r($_SESSION);
          
-        //echo $_SESSION['cartItems'];
+        echo $_SESSION['cartItems'];
         //  echo $currentCart;
         //         echo $cartItem;
 
