@@ -19,8 +19,8 @@
      if (array_key_exists('cartItems',$_SESSION) && !empty($_SESSION['cartItems']))
      {
     //     // display it
-    //     foreach($_SESSION['cartItems'] as $cartItem)
-    //     {
+         foreach($_SESSION['cartItems'] as $cartItem)
+         {
     //         echo $cartItem;
 
          }
