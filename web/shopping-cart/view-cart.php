@@ -1,6 +1,10 @@
 <?php session_start(); ?>
 
+
+
+
 <?php
+include "populate.php";
 
 $cartItems = array();
 
