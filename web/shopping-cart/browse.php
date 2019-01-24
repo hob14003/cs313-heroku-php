@@ -31,7 +31,7 @@
                 foreach($skateboardDeck as $deck)
                 {
                     echo "<div>";
-                echo "<input type=\"checkbox\" name=\"purchasedItems[]\" value=\"$deck skate deck\"> $deck skate deck <br>";
+                echo "<input type=\"checkbox\" name=\"purchasedItems[]\" value=\"$deck skate deck $10.00\"> $deck skate deck $10.00 <br>";
                     echo "</div>";
                 }
              ?>
