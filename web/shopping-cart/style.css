@@ -17,6 +17,12 @@ li a:hover {
     margin-top:5em;
 }
 
+
+button
+{
+    margin:2em;
+}
+
   form
   {
       display:flex;
