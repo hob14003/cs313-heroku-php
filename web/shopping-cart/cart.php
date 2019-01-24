@@ -18,12 +18,12 @@
     // if there is
      if (array_key_exists('cartItems',$_SESSION) && !empty($_SESSION['cartItems']))
      {
-    //     // display it
-    print_r($_SESSION);
+        //     // display it
+        print_r($_SESSION);
          
-        echo $_SESSION['cartItems'];
-      //  echo $currentCart;
-    //         echo $cartItem;
+        //echo $_SESSION['cartItems'];
+        //  echo $currentCart;
+        //         echo $cartItem;
 
          
 
