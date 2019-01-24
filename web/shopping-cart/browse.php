@@ -19,7 +19,6 @@
              
                 foreach($skateboardDeck as $deck)
                 {
-                echo "<input type=\"checkbox\" name=\"purchasedItems[]\" value=\"$deck skate deck\"> $deck <br>";
                
                 echo "<div class=\"saleItems\"> <p> $deck </p> <button id=\"$deck\" value=\"Add One\"> </div>";
 
