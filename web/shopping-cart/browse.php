@@ -7,7 +7,7 @@
 
         <?php
         // update the session
-        include "view-cart.php";
+        include "update-session.php";
         ?>
 
 
