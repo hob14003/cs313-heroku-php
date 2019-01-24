@@ -11,8 +11,7 @@
         <div class="container">
          <form>
              <input type="radio" name="deck" value="Red skate deck"> <?php echo $skateboardDeck[0]; ?>
-                <?php //showItems(); ?>
-
+              
          </form>
         </div>
 
