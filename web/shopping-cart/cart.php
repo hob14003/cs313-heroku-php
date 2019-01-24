@@ -23,7 +23,7 @@
          
         $currentCart = $_SESSION['cartItems'];
 
-        echo $currentCart;
+      //  echo $currentCart;
     //         echo $cartItem;
 
          
