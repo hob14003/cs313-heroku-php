@@ -18,7 +18,7 @@ echo $_SESSION["cartItems"][1];
 
 
 
-foreach ($_SESSION["cartItems"][0] as $sitem)
+foreach ($_SESSION["cartItems"] as $sitem)
 {
     echo $sitem;
 }
