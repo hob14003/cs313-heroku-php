@@ -7,6 +7,5 @@ $skateboardDeck = array("red","blue","yellow");
 $toques = array("red","blue","yellow");
 $items = array($skateboardDeck,$toques);
 
-echo $test;
 
 ?>
