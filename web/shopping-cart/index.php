@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <?php include "shop.php"?>
+        
     </head>
     <body>
 
