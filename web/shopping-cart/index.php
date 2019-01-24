@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <?php include "storage.php"?>
+        
     </head>
     <body>
 
@@ -10,7 +10,7 @@
 
         <div class="container">
          <form>
-             <input type="radio" name="deck" value="Red skate deck"> <?php echo $skateboardDeck[0]; ?>
+             <?php include "populate.php" ?>
               
          </form>
         </div>
