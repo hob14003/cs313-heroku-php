@@ -2,13 +2,11 @@
 
 <?php
 
-$purchasedItems = $_POST["purchasedItems"];
 
-echo "hello world";
-
-echo $_POST["purchasedItems"];
-
-foreach($purchasedItems as $item)
+foreach($_POST["purchasedItems"] as $item)
+{
 echo $item;
+}
+
 
 ?>
