@@ -11,6 +11,9 @@ foreach($_POST["purchasedItems"] as $item)
 array_push($cartItems,$item);
 }
 
+$_SESSION["cartItems"] = $cartItems;
+
+
 echo $_SESSION["cartItems"][0];
 
 
