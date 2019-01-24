@@ -16,6 +16,11 @@ $_SESSION["cartItems"] = $cartItems;
 
 echo $_SESSION["cartItems"][0];
 
+foreach ($_SESSION["cartItems"][0] as $sitem)
+{
+    echo $sitem;
+}
+
 
 $_SESSION["cartItems"] = $cartItems;
 print_r($_SESSION);
