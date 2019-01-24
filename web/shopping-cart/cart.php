@@ -19,7 +19,7 @@
      if (array_key_exists('cartItems',$_SESSION) && !empty($_SESSION['cartItems']))
      {
         //     // display it
-        print_r($_SESSION);
+//        print_r($_SESSION);
          
         //echo $_SESSION['cartItems'];
         //  echo $currentCart;
