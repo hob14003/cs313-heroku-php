@@ -2,9 +2,11 @@
 
 <?php
 
-$purchasedItems = $_POST["purchasedItems[]"];
+$purchasedItems = $_POST["purchasedItems"];
+
 echo "hello world";
-echo $_POST["purchasedItems[0]"];
+
+echo $_POST["purchasedItems"];
 
 foreach($purchasedItems as $item)
 echo $item;
