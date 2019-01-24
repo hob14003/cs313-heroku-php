@@ -14,17 +14,19 @@
     </div>
 
         <div class="container">
-         <form action="view-cart.php" method="post">
+         
              <?php include "storage.php";      
              
                 foreach($skateboardDeck as $deck)
                 {
                 echo "<input type=\"checkbox\" name=\"purchasedItems[]\" value=\"$deck skate deck\"> $deck <br>";
+               
+                echo "<div class=\"saleItems\"> <p> $deck </p> <button id=\"$deck\" value=\"Add One\"> </div>";
+
                 }
              ?>
-              <input type="submit" value="Checkout">
-         </form>
         </div>
 
+        
     </body>
 </html>

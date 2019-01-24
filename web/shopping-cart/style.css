@@ -45,6 +45,12 @@ ul {
 
   }
 
+  .saleItems
+  {
+      display:flex;
+      flex-direction:row;
+  }
+
 
   li a {
     display: block;
