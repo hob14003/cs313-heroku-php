@@ -13,7 +13,7 @@
     <!-- adds the navigation bar -->
     <?php include "populate.php" ?>
 
-    <div>
+    <div class="buffer">
         <h1>Items Currently in Cart</h1>
     </div>
     <?php
