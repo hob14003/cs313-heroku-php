@@ -2,11 +2,17 @@
 
 <?php
 
+$cartItems = array();
+
 
 foreach($_POST["purchasedItems"] as $item)
 {
-echo $item;
+//echo $item;
+array_push($cartItems,$item);
 }
 
+
+$_SESSION["cartItems"] += $cartItems;
+print_r($_SESSION);
 
 ?>
