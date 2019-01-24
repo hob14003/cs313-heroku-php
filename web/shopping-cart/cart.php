@@ -16,6 +16,9 @@
     <div class="buffer">
         <h1>Items Currently in Cart</h1>
     </div>
+
+
+    <form>
     <?php
     // check if there is a cart already
     // if there is
@@ -24,7 +27,10 @@
         // display each item
          foreach($_SESSION['cartItems'] as $item)
          {
-            echo "<div class=\"container\"> $item </div>";
+            echo "<div class=\"container\"> $item";
+            echo "<input type=\"checkbox\" name=\"rejecteditems[]\" value=\"$deck\">";
+            echo "</div>";
+
          }
 
      }
@@ -32,6 +38,9 @@
 
 
     ?>
+    <input type="submit">
+    </form>
+
 
 </body>
 
