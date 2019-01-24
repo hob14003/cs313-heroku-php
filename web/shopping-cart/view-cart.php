@@ -14,7 +14,9 @@ array_push($cartItems,$item);
 $_SESSION["cartItems"] = $cartItems;
 
 
-echo $_SESSION["cartItems"][0];
+echo $_SESSION["cartItems"][1];
+
+
 
 foreach ($_SESSION["cartItems"][0] as $sitem)
 {
