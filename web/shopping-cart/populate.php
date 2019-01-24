@@ -1,4 +1,5 @@
 <?php
+include "storage.php";
 
 echo "<nav>
 <ul>
