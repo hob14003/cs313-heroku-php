@@ -9,7 +9,7 @@
 
         <div class="container">
          <form>
-             <?php include "populate.php"; showItems(); ?>
+             <?php include "storage.php"; include "populate.php"; showItems(); ?>
               
          </form>
         </div>
