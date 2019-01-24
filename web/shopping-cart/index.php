@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        
+        <?php include "storage.php"?>
     </head>
     <body>
 
