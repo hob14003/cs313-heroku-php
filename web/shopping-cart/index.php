@@ -1,10 +1,12 @@
+<?php session_start(); ?>
+
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
         
     </head>
     <body>
-
+<!-- adds the navigation bar -->
     <?php include "populate.php" ?>
 
     <div class="container">
@@ -12,7 +14,7 @@
     </div>
 
         <div class="container">
-         <form>
+         <form action="checkout.php" method="post">
              <?php include "storage.php";      
              
                 foreach($skateboardDeck as $deck)
@@ -20,7 +22,7 @@
                 echo "<input type=\"checkbox\" name=\"$deck\" value=\"$deck skate deck\"> $deck <br>";
                 }
              ?>
-              
+              <input type="submit" value="Checkout">
          </form>
         </div>
 
