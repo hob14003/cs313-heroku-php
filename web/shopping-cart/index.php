@@ -11,13 +11,15 @@
          <form>
              <?php include "storage.php";      
              
-    foreach($skateboardDeck as $deck)
-    {
-        echo "<p> hello world </p>";
-        echo "<input type=\"radio\" name=\"deck\" value=\"$deck skate deck\"> $skateboardDeck[0] <br>";
-    }
+    // foreach($skateboardDeck as $deck)
+    // {
+    //     echo "<p> hello world </p>";
+    //     echo "<input type=\"radio\" name=\"deck\" value=\"$deck skate deck\"> $skateboardDeck[0] <br>";
+    // }
     
-    
+    include "populate.php";
+
+    populate();
     
     ?>
               
