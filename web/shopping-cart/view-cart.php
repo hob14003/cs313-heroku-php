@@ -13,6 +13,7 @@ array_push($cartItems,$item);
 
 $_SESSION["cartItems"] = $cartItems;
 
+array_push($_SESSION["cartItems"], "hello world");
 
 foreach ($_SESSION["cartItems"] as $sitem)
 {
