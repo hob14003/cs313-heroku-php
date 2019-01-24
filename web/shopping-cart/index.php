@@ -5,7 +5,11 @@
     </head>
     <body>
 
+    <?php include "populate.php" ?>
+
+    <div class="container">
         <h1>Browse</h1>
+    </div>
 
         <div class="container">
          <form>
