@@ -20,8 +20,9 @@
 
     <div class="container">
     <form action="confirm.php" method="post" >
-            First Name:  <input type="text" name="fname">
-            Last Name:  <input type="text" name="lname">
+            <textarea placeholder="Enter First Name" name="fname"></textarea>
+            <textarea placeholder="Enter Last Name" name="lname"></textarea>
+
    
     <textarea placeholder="Enter street address" name="address"></textarea>
     <textarea placeholder="Enter Zip code" name="zip"></textarea>
