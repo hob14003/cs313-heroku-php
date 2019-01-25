@@ -16,6 +16,7 @@ include 'removeitems.php';
 
 ?>
 
+location.reload();
     <!-- adds the navigation bar -->
     <?php //include "populate.php" ?>
 
