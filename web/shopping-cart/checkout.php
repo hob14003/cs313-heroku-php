@@ -14,7 +14,9 @@
     <?php include "populate.php" ?>
 
 
-    <div class="buffer"> </div>
+    <div class="buffer">
+    <h1>Enter shipping information</h1>        
+</div>
 
     <div class="container">
     <form action="confirm.php" action="post">
