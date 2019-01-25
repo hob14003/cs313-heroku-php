@@ -11,7 +11,12 @@
 
 
 <?php
-include "removeitems.php";
+foreach($_POST['rejecteditems'] as $yui)
+{
+echo $yui;
+}
+
+
 ?>
 
     <!-- adds the navigation bar -->
