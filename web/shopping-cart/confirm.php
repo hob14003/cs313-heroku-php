@@ -13,7 +13,9 @@
     <h1>Confirmation Page</h1>    
     </div>    
 
- Your name is :   <?php echo $_POST['name']; ?>
+    <div class="container"> 
+    <p>   <?php echo $_POST['name']; ?> </p>
+    </div>
 
 </body>
 
