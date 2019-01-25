@@ -5,7 +5,6 @@ foreach($_POST['rejecteditems'] as $yui)
 {
 echo $yui;
 }
-?>
 
 
 ?>
