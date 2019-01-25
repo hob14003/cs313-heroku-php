@@ -21,7 +21,7 @@
     <div class="container">
     <form action="confirm.php" action="post">
 
-    <textarea placeholder="Enter First Name" name="fname" value="Jesse"></textarea>
+    <textarea placeholder="Enter First Name" name="fname" ></textarea>
     <textarea placeholder="Enter Last Name" name="lname"></textarea>
     <textarea placeholder="Enter street address" name="address"></textarea>
     <textarea placeholder="Enter postal code" name="pcode"></textarea>
