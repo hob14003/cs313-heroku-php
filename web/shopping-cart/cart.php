@@ -37,7 +37,7 @@ echo $yui;
          foreach($_SESSION['cartItems'] as $item)
          {
             echo "<div class=\"container\"> $item";
-            echo "<input type=\"checkbox\" name=\"rejecteditems[]\" value=\"$deck\">";
+            echo "<input type=\"checkbox\" name=\"rejecteditems[]\" value=\"$item\">";
             echo "</div>";
 
          }
