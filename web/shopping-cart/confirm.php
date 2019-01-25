@@ -6,6 +6,21 @@
 </head>
 
 <body>
+
+
+<?php
+
+// filtering
+$fname = filter_var($_POST['fname']);
+$lname = filter_var($_POST['lname']);
+$address = filter_var($_POST['address']);
+$zip = filter_var($_POST['zip']);
+$state = filter_var($_POST['state']);
+$country = filter_var($_POST['country']);
+
+?>
+
+
     <!-- adds the navigation bar -->
     <?php include "populate.php" ?>
 
@@ -14,27 +29,27 @@
     </div>    
 
     <div class="container"> 
-    <p> First Name:   <?php echo $_POST['fname']; ?> </p>
+    <p> First Name:   <?php echo $fname; ?> </p>
     </div>
 
     <div class="container"> 
-    <p> Last Name:   <?php echo $_POST['lname']; ?> </p>
+    <p> Last Name:   <?php echo $lname; ?> </p>
     </div>
 
     <div class="container"> 
-    <p> Street Address:   <?php echo $_POST['address']; ?> </p>
+    <p> Street Address:   <?php echo $address; ?> </p>
     </div>
 
     <div class="container"> 
-    <p> Zip Code:   <?php echo $_POST['zip']; ?> </p>
+    <p> Zip Code:   <?php echo $zip; ?> </p>
     </div>
 
     <div class="container"> 
-    <p> State:   <?php echo $_POST['state']; ?> </p>
+    <p> State:   <?php echo $state; ?> </p>
     </div>
 
     <div class="container"> 
-    <p> Country:   <?php echo $_POST['country']; ?> </p>
+    <p> Country:   <?php echo $country; ?> </p>
     </div>
 
 
@@ -42,7 +57,8 @@
     <p> Items to be purchased:   
         <?php foreach($_SESSION['cartItems'] as $sold)
         {
-            echo "$sold ";
+
+            echo filter_var($sold);
         }
         
         ?> 
