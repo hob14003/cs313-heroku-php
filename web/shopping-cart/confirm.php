@@ -14,7 +14,27 @@
     </div>    
 
     <div class="container"> 
-    <p> Name:   <?php echo $_POST['name']; ?> </p>
+    <p> Name:   <?php echo $_POST['fname']; ?> </p>
+    </div>
+
+    <div class="container"> 
+    <p> Name:   <?php echo $_POST['lname']; ?> </p>
+    </div>
+
+    <div class="container"> 
+    <p> Name:   <?php echo $_POST['address']; ?> </p>
+    </div>
+
+    <div class="container"> 
+    <p> Name:   <?php echo $_POST['zip']; ?> </p>
+    </div>
+
+    <div class="container"> 
+    <p> Name:   <?php echo $_POST['state']; ?> </p>
+    </div>
+
+    <div class="container"> 
+    <p> Name:   <?php echo $_POST['country']; ?> </p>
     </div>
 
 </body>

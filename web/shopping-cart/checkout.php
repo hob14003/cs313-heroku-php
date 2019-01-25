@@ -20,10 +20,14 @@
 
     <div class="container">
     <form action="confirm.php" method="post" >
-            Name:  <input type="text" name="name">
-            Email:  <input type="text" name="email">
+            First Name:  <input type="text" name="fname">
+            Last Name:  <input type="text" name="lname">
    
-    <textarea placeholder="Enter Comments" name="summary"></textarea>
+    <textarea placeholder="Enter street address" name="address"></textarea>
+    <textarea placeholder="Enter Zip code" name="zip"></textarea>
+    <textarea placeholder="Enter State" name="state"></textarea>
+    <textarea placeholder="Enter Country" name="country"></textarea>
+
 
     <input type="submit">
 </form>
