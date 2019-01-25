@@ -17,7 +17,10 @@
     <h1>Confirmation Page</h1>    
     </div>    
 
-    
+    <?php
+    echo $_POST['fname'];
+    echo "hello world";
+    ?>
 
     <div class="container"> <p> First Name:  <?php echo $_POST['fname'];  ?> </p> </div>
     <div class="container"> <p> Last Name:  <?php echo $_POST['lname'];  ?> </p> </div>
