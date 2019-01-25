@@ -10,6 +10,13 @@
 
 
 <body>
+
+
+<?php
+        // update the session
+        include "remove-items.php";
+?>
+
     <!-- adds the navigation bar -->
     <?php include "populate.php" ?>
 
@@ -18,7 +25,7 @@
     </div>
 
 
-    <form action="removeitems.php" method="post">
+    <form action="cart.php" method="post">
     <?php
     // check if there is a cart already
     // if there is
