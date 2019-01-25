@@ -28,6 +28,7 @@
     <textarea placeholder="Enter state" name="state"></textarea>
     <textarea placeholder="Enter country" name="country"></textarea>
 
+    <input type="submit" value="Proceed to confirmation page">
 
     </form>
 </div>
