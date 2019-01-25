@@ -11,10 +11,7 @@
 
 
 <?php
-foreach($_POST['rejecteditems'] as $yui)
-{
-echo $yui;
-}
+include 'removeitems.php';
 
 
 ?>
