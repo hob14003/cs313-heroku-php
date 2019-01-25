@@ -4,7 +4,7 @@
 $removeMe = array();
 
 // remove requested items from cart.
-foreach($_POST["purchasedItems"] as $item)
+foreach($_POST["rejecteditems"] as $item)
 {
 //echo $item;
 array_push($removeMe,$item);
