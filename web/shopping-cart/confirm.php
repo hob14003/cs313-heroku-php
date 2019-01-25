@@ -14,7 +14,7 @@
     </div>    
 
     <div class="container"> 
-    <p>   <?php echo $_POST['name']; ?> </p>
+    <p> Name:   <?php echo $_POST['name']; ?> </p>
     </div>
 
 </body>
