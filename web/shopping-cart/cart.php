@@ -4,6 +4,7 @@
 
 <head>
 <link rel="stylesheet" href="style.css">
+<script src="scripts.js">
 </head>
 
 
@@ -24,7 +25,7 @@ include 'removeitems.php';
     </div>
 
 
-    <form action="cart.php" method="post">
+    <form action="cart.php" method="post" onsubmit="clear()" id="clearMe">
     <?php
     // check if there is a cart already
     // if there is
