@@ -38,6 +38,7 @@ if (array_key_exists('cartItems',$_SESSION) && !empty($_SESSION['cartItems']))
     $_SESSION['cartItems'] = $trueCartItems;
 
 
+    echo "sklajdlsajkdajl";
     foreach($trueCartItems)
     {
         echo "1";
