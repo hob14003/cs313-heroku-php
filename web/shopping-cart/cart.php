@@ -18,7 +18,7 @@
     </div>
 
 
-    <form>
+    <form action="removeitems.php" method="post">
     <?php
     // check if there is a cart already
     // if there is
