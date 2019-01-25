@@ -1,5 +1,6 @@
 
 function clear()
 {
-    document.getElementById("clearMe").childNodes.innerHTML = null;
+  let form =  document.getElementById("clearMe").childNodes.children;
+  form[0].innerHTML = null;
 }
