@@ -5,16 +5,12 @@
 $removedItems = array();
 
 
-
+// show which ones need to be removed
 foreach($_POST['rejecteditems'] as $yui)
 {
     array_push($removedItems,$yui);
 }
 
-foreach($removedItems as $it)
-{
-    echo $it;
-}
 
 
 // check if there is a cart already
@@ -36,10 +32,10 @@ if (array_key_exists('cartItems',$_SESSION) && !empty($_SESSION['cartItems']))
         }
 
     }
-    echo $trueCart[0];
 
     $_SESSION['cartItems'] = $trueCart;
 
+    print_r($_SESSION);
 }
 
 }
