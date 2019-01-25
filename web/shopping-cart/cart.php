@@ -25,7 +25,7 @@ include 'removeitems.php';
     </div>
 
 
-    <form action="cart.php" method="post" onsubmit="clear()" id="clearMe">
+    <form action="cart.php" method="post"  id="clearMe">
     <?php
     // check if there is a cart already
     // if there is
