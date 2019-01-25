@@ -4,15 +4,17 @@
 
 $removedItems = array();
 
+echo "sklajdlsajkdajl";
+
 
 foreach($_POST['rejecteditems'] as $yui)
 {
+    array_push($removedItems,$item);
+
 echo $yui;
 //echo $item;
-array_push($removedItems,$item);
 }
 
-echo "sklajdlsajkdajl";
 
 
 // check if there is a cart already
