@@ -45,7 +45,7 @@
 
 
     ?>
-    <input type="submit">
+    <input type="submit" value="Remove Selected">
     </form>
 
 
