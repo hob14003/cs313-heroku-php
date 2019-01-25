@@ -12,13 +12,14 @@ echo $yui;
 array_push($removedItems,$item);
 }
 
+echo "sklajdlsajkdajl";
+
 
 // check if there is a cart already
 // if there is
 if (array_key_exists('cartItems',$_SESSION) && !empty($_SESSION['cartItems']))
 {
 
-    echo "sklajdlsajkdajl";
 
     $trueCartItems = $_SESSION['cartItems'];
 
