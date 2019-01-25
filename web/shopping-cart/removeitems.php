@@ -19,7 +19,7 @@ if (array_key_exists('cartItems',$_SESSION) && !empty($_SESSION['cartItems']))
 {
     $trueCart = $_SESSION['cartItems'];
 
-   $_SESSION["cartItems"] = array_diff($trueCart,$removedItems);
+ //  $_SESSION["cartItems"] = array_diff($trueCart,$removedItems);
 
 
 
@@ -28,7 +28,7 @@ if (array_key_exists('cartItems',$_SESSION) && !empty($_SESSION['cartItems']))
 }
 else
 {
-    
+
 }
 
 }
