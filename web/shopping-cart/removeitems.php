@@ -7,7 +7,7 @@ $removeMe = array();
 foreach($_POST["purchasedItems"] as $item)
 {
 //echo $item;
-array_push($cartItems,$item);
+array_push($removeMe,$item);
 }
 
 
