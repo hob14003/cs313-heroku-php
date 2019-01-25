@@ -14,6 +14,7 @@ array_push($removeMe,$item);
 foreach($removeMe as $removed)
 {
     echo $removed;
+    echo "hello world";
 }
 
 ?>
