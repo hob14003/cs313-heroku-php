@@ -21,13 +21,19 @@ foreach($removeMe as $removed)
 
 if (array_key_exists('cartItems',$_SESSION) && !empty($_SESSION['cartItems']))
 {
-    // add each new item into the session cart
-    foreach($cartItems as $possiblePurchases)
+    foreach($removeMe as $removedItem)
     {
-        echo $possiblePurchases;
+    // add each new item into the session cart
+    foreach($_SESSION['cartItems'] as $possiblePurchases)
+    {
+        if ($possiblePurchases == $removedItem)
+        {
+            
+
+        }
     }
 
-
+    }
 }
 
 
