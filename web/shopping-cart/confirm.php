@@ -19,7 +19,7 @@
 
     
 
-    <div class="container"> <p> First Name:  <?php echo $_POST["fname"];  ?> </p> </div>
+    <div class="container"> <p>  <?php echo $_POST["fname"];  ?> </p> </div>
     <div class="container"> <p> Last Name:  <?php echo $_POST["lname"];  ?> </p> </div>
     <div class="container"> <p> Street Address: <?php echo $_POST["address"];  ?> </p> </div>
     <div class="container"> <p> Postal Code: <?php echo $_POST["pcode"];  ?> </p> </div>
