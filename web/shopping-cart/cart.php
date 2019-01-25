@@ -4,8 +4,6 @@
 
 <head>
 <link rel="stylesheet" href="style.css">
-
-
 </head>
 
 
@@ -13,11 +11,7 @@
 
 
 <?php
- 
 include "removeitems.php";
-
-
-        
 ?>
 
     <!-- adds the navigation bar -->
