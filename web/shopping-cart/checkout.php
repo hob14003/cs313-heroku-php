@@ -19,18 +19,16 @@
     </div>
 
     <div class="container">
-    <form action="confirm.php" action="post">
+    <form action="confirm.php" method="post" >
+            Name:  <input type="text" name="name">
+            Email:  <input type="text" name="email">
+   
+    <textarea placeholder="Enter Comments" name="summary"></textarea>
 
-    <textarea placeholder="Enter First Name" name="fname" id="fname" ></textarea>
-    <textarea placeholder="Enter Last Name" name="lname"></textarea>
-    <textarea placeholder="Enter street address" name="address"></textarea>
-    <textarea placeholder="Enter postal code" name="pcode"></textarea>
-    <textarea placeholder="Enter state" name="state"></textarea>
-    <textarea placeholder="Enter country" name="country"></textarea>
-    <input type="submit" value="Proceed to confirmation page">
+    <input type="submit">
+</form>
 
-    </form>
-    </div>
+</div>
 
 </body>
 

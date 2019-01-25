@@ -13,7 +13,8 @@
     <h1>Confirmation Page</h1>    
     </div>    
 
-    <?php echo $_POST['fname']; echo "hello world"; ?>
+ Your name is :   <?php echo $_POST['name']; ?>
+
 </body>
 
 
