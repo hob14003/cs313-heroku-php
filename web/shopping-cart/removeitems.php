@@ -9,7 +9,7 @@ echo "sklajdlsajkdajl";
 
 foreach($_POST['rejecteditems'] as $yui)
 {
-    array_push($removedItems,$item);
+    array_push($removedItems,$yui);
 
 echo $yui;
 //echo $item;
