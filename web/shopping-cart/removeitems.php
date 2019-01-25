@@ -36,6 +36,8 @@ if (array_key_exists('cartItems',$_SESSION) && !empty($_SESSION['cartItems']))
 
     // set the new session key
     $_SESSION['cartItems'] = $trueCartItems;
+
+    print_r($_SESSION);
 }
 
 
