@@ -36,6 +36,7 @@ if (array_key_exists('cartItems',$_SESSION) && !empty($_SESSION['cartItems']))
         }
 
     }
+    echo $trueCart;
 
     $_SESSION['cartItems'] = $trueCart;
 
