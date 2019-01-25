@@ -17,22 +17,25 @@ array_push($removedItems,$item);
 // if there is
 if (array_key_exists('cartItems',$_SESSION) && !empty($_SESSION['cartItems']))
 {
+
+    $trueCartItems = $_SESSION['cartItems'];
+
     foreach($removedItems as $remove)
     {
-
-    
-        // add each new item into the session cart
-        foreach($cartItems as $possiblePurchases)
+        // Remove each new item from the session cart
+        foreach($trueCartItems as $possiblePurchases)
         {
             if ($remove == $possiblePurchases)
             {
-                unset($cartItems[$possiblePurchases]);
+                unset($trueCartItems[$possiblePurchases]);
             }
 
         }
 
     }
 
+    // set the new session key
+    $_SESSION['cartItems'] = $trueCartItems;
 }
 
 
