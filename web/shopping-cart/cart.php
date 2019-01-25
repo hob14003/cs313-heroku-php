@@ -34,7 +34,7 @@ include 'removeitems.php';
         // display each item
          foreach($_SESSION['cartItems'] as $item)
          {
-            echo "<div class=\"container\"> $item";
+            echo "<div class=\"killMe\"> $item";
             echo "<input type=\"checkbox\" name=\"rejecteditems[]\" value=\"$item\">";
             echo "</div>";
 
