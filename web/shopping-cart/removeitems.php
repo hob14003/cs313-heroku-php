@@ -18,6 +18,8 @@ array_push($removedItems,$item);
 if (array_key_exists('cartItems',$_SESSION) && !empty($_SESSION['cartItems']))
 {
 
+    echo "sklajdlsajkdajl";
+
     $trueCartItems = $_SESSION['cartItems'];
 
     foreach($removedItems as $remove)
@@ -38,7 +40,7 @@ if (array_key_exists('cartItems',$_SESSION) && !empty($_SESSION['cartItems']))
     $_SESSION['cartItems'] = $trueCartItems;
 
 
-    echo "sklajdlsajkdajl";
+    
     foreach($trueCartItems)
     {
         echo "1";
