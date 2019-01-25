@@ -1,5 +1,5 @@
 
 function clear()
 {
-    document.getElementById("clearMe").innerHTML = null;
+    document.getElementById("clearMe").childNodes.innerHTML = null;
 }
