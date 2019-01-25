@@ -32,13 +32,13 @@
             echo " <p> hello world </p>";
         }
 
-        
+
 
         
 ?>
 
     <!-- adds the navigation bar -->
-    <?php include "populate.php" ?>
+    <?php //include "populate.php" ?>
 
     <div class="buffer">
         <h1>Items Currently in Cart</h1>
