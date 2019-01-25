@@ -2,5 +2,5 @@
 function clear()
 {
 
-    document.getElementById("killMe").innerHTML = null;
+ //   document.getElementById("killMe").innerHTML = null;
 }
