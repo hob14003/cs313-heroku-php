@@ -13,7 +13,20 @@
     <!-- adds the navigation bar -->
     <?php include "populate.php" ?>
 
-    
+    <div class="container">
+    <form action="confirm.php" action="post">
+
+    <textarea placeholder="Enter First Name" name="fname"></textarea>
+    <textarea placeholder="Enter Last Name" name="lname"></textarea>
+    <textarea placeholder="Enter street address" name="address"></textarea>
+    <textarea placeholder="Enter postal code" name="pcode"></textarea>
+    <textarea placeholder="Enter state" name="state"></textarea>
+    <textarea placeholder="Enter country" name="country"></textarea>
+
+
+    </form>
+</div>
+
 </body>
 
 
