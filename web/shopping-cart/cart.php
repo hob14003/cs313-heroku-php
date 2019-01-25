@@ -22,14 +22,14 @@
             echo "<p> $item </p>";
         //echo $item;
         array_push($removeMe,$item);
-        
+
         }
         
         
         foreach($removeMe as $removed)
         {
             echo $removed;
-            echo "hello world";
+            echo " <p> hello world </p>";
         }
         
 ?>
