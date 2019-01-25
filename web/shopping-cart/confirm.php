@@ -14,27 +14,27 @@
     </div>    
 
     <div class="container"> 
-    <p> Name:   <?php echo $_POST['fname']; ?> </p>
+    <p> First Name:   <?php echo $_POST['fname']; ?> </p>
     </div>
 
     <div class="container"> 
-    <p> Name:   <?php echo $_POST['lname']; ?> </p>
+    <p> Last Name:   <?php echo $_POST['lname']; ?> </p>
     </div>
 
     <div class="container"> 
-    <p> Name:   <?php echo $_POST['address']; ?> </p>
+    <p> Street Address:   <?php echo $_POST['address']; ?> </p>
     </div>
 
     <div class="container"> 
-    <p> Name:   <?php echo $_POST['zip']; ?> </p>
+    <p> Zip Code:   <?php echo $_POST['zip']; ?> </p>
     </div>
 
     <div class="container"> 
-    <p> Name:   <?php echo $_POST['state']; ?> </p>
+    <p> State:   <?php echo $_POST['state']; ?> </p>
     </div>
 
     <div class="container"> 
-    <p> Name:   <?php echo $_POST['country']; ?> </p>
+    <p> Country:   <?php echo $_POST['country']; ?> </p>
     </div>
 
 </body>
