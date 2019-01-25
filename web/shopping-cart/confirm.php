@@ -37,6 +37,21 @@
     <p> Country:   <?php echo $_POST['country']; ?> </p>
     </div>
 
+
+    <div class="container"> 
+    <p> Items to be purchased:   
+        <?php foreach($_SESSION['cartItems'] as $sold)
+        {
+            echo "$sold ";
+        }
+        
+        ?> 
+    
+    </p>
+    </div>
+
+
+
 </body>
 
 
