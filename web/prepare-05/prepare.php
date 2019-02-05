@@ -21,11 +21,11 @@ catch (PDOException $ex)
   die();
 }
 
-// $id = 1;
-// $name = "jesse";
+$id = 1;
+$name = "jesse";
 
 
-// $stmt = $db->prepare('SELECT * FROM employees WHERE id=:id AND name=:name');
+ $stmt = $db->prepare('SELECT * FROM employees WHERE id=:id AND name=:name');
 // $stmt->bindValue(':id', $id, PDO::PARAM_INT);
 // $stmt->bindValue(':name', $name, PDO::PARAM_STR);
 // $stmt->execute();
