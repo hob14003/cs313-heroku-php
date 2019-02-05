@@ -32,7 +32,7 @@ try
 foreach ($db->query('SELECT username, phone FROM clients') as $row)
 {
   echo 'user: ' . $row['username'];
-  echo ' password: ' . $row['password'];
+  echo ' phone number: ' . $row['phone'];
   echo '<br/>';
 }
 
