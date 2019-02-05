@@ -26,8 +26,7 @@ $name = "Jesse";
  $stmt->execute();
  $rows = $stmt->fetchAll(PDO::FETCH_ASSOC); 
 
-foreach ($rows as $value)
-echo $value;
+echo $rows['username'];
 
 
 }
