@@ -26,7 +26,7 @@ $name = "jesse";
  $stmt->execute();
  $rows = $stmt->fetchAll(PDO::FETCH_ASSOC); 
 
-
+echo $rows;
 
 
 }
