@@ -17,7 +17,7 @@ try
 
 
   $id = 1;
-$name = "jesse";
+$name = "Jesse";
 
 
  $stmt = $db->prepare('SELECT * FROM employees WHERE id=:id AND username=:name');
