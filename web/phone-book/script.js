@@ -10,7 +10,7 @@ searchElement.addEventListener("keyup",(client) => {
 
     
     var target = (client.target) ? client.target : client.srcElement;
-    console.log(target);
+    console.log(target.value);
 
 }
 
