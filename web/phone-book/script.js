@@ -4,15 +4,14 @@
 
 function updateList(client)
 {
-    console.log(client);
+    console.log(this);
+    console.log(this.value);
 
-    client.value;
-    console.log(client.value);
-
+   
 
 }
 
 
 let searchElement = document.getElementById("query");
 console.log(searchElement);
-searchElement.addEventListener("keyup",updateList(this));
+searchElement.addEventListener("keyup",updateList());
