@@ -8,8 +8,9 @@ let searchElement = document.getElementById("query");
 console.log(searchElement);
 searchElement.addEventListener("keyup",(client) => {
 
-    console.log(client.target);
     
+    var target = (e.target) ? e.target : e.srcElement;
+    console.log(target);
 
 }
 
