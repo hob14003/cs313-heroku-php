@@ -11,4 +11,5 @@ function updateList(client)
 
 
 let searchElement = document.getElementById("query");
+console.log(searchElement);
 searchElement.addEventListener("keyup",updateList());
