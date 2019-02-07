@@ -13,7 +13,7 @@
 <p> Call Clients </p>
 </div>
 
-<input type="search" name="query" id="query">
+<input type="search" placeholder = "Enter Client Name" name="query" id="query">
 <div id="clientlist">
 
 <button type = "button" > Zack </button>
