@@ -9,6 +9,10 @@
 <!-- adds the navigation bar -->
 <?php include "populate.php" ?>
 
+<div class="container">
+    
+</div>
+
 </body>
 
 
