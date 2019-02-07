@@ -9,7 +9,7 @@ console.log(searchElement);
 searchElement.addEventListener("keyup",(client) => {
 
     
-    var target = (e.target) ? e.target : e.srcElement;
+    var target = (client.target) ? client.target : client.srcElement;
     console.log(target);
 
 }
