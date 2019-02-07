@@ -17,6 +17,9 @@
 <input type="search" placeholder = "Enter Client Name" name="query" id="query">
 <div id="clientlist">
 
+<div id="results" class="container">
+    
+</div>
 <button type = "button" > Zack </button>
 
 
