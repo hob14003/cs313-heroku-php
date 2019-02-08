@@ -50,6 +50,7 @@ echo "<div class='container'>";
  {
 
   $eName = $row['employees.username'];
+  echo "Last employee to call was " + $eName;
 
  }
 
