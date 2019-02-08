@@ -49,9 +49,9 @@ echo "<div class='container'>";
  WHERE calls.client_id = clients.id')
  {
 
-  $employee = $row['empU'];
+  //$employee = $row['empU'];
 
-  echo "Last called by" + $employee;
+  //echo "Last called by" + $employee;
 
  }
 
