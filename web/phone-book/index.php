@@ -20,7 +20,6 @@
 <div id="results" class="container">
     
 </div>
-<button type = "button" > Zack </button>
 
 
 </div>
