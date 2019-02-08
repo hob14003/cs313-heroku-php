@@ -52,7 +52,7 @@ echo "<div class='container'>";
   $eName = $row['calldate'];
 
   echo "\n";
-  echo "Last Called on " . $eName . "by" . $row['employees.username'];
+  echo "Last Called on " . $eName . "by " . $row['employees.username'];
   echo "\n";
 
 
