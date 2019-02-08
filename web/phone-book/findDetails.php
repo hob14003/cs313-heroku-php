@@ -36,11 +36,11 @@ echo "<div class='container'>";
   // echo "\n";
 
    echo "Phone Number: ";
-  // echo $phoneNumber;
+   echo $phoneNumber;
   // echo "\n";
 
    echo "Summary: ";
-  // echo $position;
+   echo $position;
   // echo "\n";
 
  //  echo "</p>";
