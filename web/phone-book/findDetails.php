@@ -43,7 +43,7 @@ echo "<div class='container'>";
 
    echo "Summary: ";
    echo $position;
-  // echo "\n";
+   echo "\n";
 
 
 
