@@ -14,7 +14,7 @@ function populateResults(clients)
 
     // create a new button
     let newButton = document.createElement("BUTTON"); // this looks good
-     newButton.innerText = "Hello world";
+     newButton.innerText = clients;
 
     // add the new button
     results.appendChild(newButton);
