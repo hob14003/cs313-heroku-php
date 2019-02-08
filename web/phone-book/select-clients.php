@@ -26,9 +26,13 @@ try
 //foreach ($db->query('SELECT username, phone FROM clients') as $row)
 foreach ($db->query('SELECT username, phone FROM clients WHERE username LIKE' . '\'' . $client . '%\'') as $row)
 {
-  echo $row['username'];
-  echo ' phone number: ' . $row['phone'];
-  echo "\n";
+ // echo $row['username'];
+ // echo ' phone number: ' . $row['phone'];
+ // echo "\n";
+
+ echo "<button id=""> {$row['username']} </button>";
+
+
 }
 
 

@@ -29,8 +29,8 @@ function populateResults(clients)
   //  let newButton = document.createElement("BUTTON"); // this looks good
     // newButton.innerText = clients;
 
-    let newItem = document.createElement("p");
-    newItem.innerText = clients;
+ //   let newItem = document.createElement("p");
+ //   newItem.innerText = clients;
 
 
 
@@ -38,7 +38,9 @@ function populateResults(clients)
      results.innerHTML = "";
 
     // add the new button
-    results.appendChild(newItem);
+  //  results.appendChild(newItem);
+
+    results.innerHTML = clients;
 
 }
 
