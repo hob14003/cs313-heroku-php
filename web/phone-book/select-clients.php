@@ -3,7 +3,7 @@ try
 {
     // hold the client name passed in;
    $client = $_POST["client"];
-
+    $target = $_POST["cElement"];
 
   $dbUrl = getenv('DATABASE_URL');
 
@@ -33,7 +33,7 @@ foreach ($db->query('SELECT username, phone FROM clients WHERE username LIKE' . 
  // echo ' phone number: ' . $row['phone'];
  // echo "\n";
 
- echo "<button id='{$username}' onclick='findDetails()'>{$username} </button>";
+ echo "<button id='{$username}' onclick='findDetails({$target})'>{$username} </button>";
 
 
 }
