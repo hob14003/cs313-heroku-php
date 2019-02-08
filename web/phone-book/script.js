@@ -6,12 +6,15 @@ searchElement.addEventListener("keyup",(client) => {
     var target = (client.target) ? client.target : client.srcElement;
     console.log(target.value);
 
+    // holds the value to be selected
     let dbData = target.value;
+
+    
 
     // fetch the list
     fetch("select-clients.php", {
         method: 'Post',
-        body: dbData
+        body: JSON.stringify({client: dbData})
     })
     .then(res => res.text()).then(text => console.log(text))
     .catch(error => console.error('DB error: ', error));
