@@ -20,12 +20,8 @@ fetch("select-clients.php", {
  * ******** */
 function findDetails(client)
 {
-
+    // give me what is inside the button
     client = client.innerText;
-
-    // for whether its internet explorer or other browsers
-  //  let target = (client.target) ? client.target : client.srcElement;
-  //  let clientName = target.value;
 
    // fetch the list
 fetch("findDetails.php", {

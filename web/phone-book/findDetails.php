@@ -30,20 +30,20 @@ echo "<div class='container'>";
      $phoneNumber = $row['phone'];
      $position = $row['about'];
 
-//   echo "<p>"
+   echo "<p>"
    echo "Client name is ";
    echo $username;
- //  echo "\n";
+   echo "\n";
 
-//   echo "Phone Number: ";
-//   echo $phoneNumber;
-//   echo "\n";
+   echo "Phone Number: ";
+   echo $phoneNumber;
+   echo "\n";
 
-//   echo "Summary: ";
-//   echo $position;
-//   echo "\n";
+   echo "Summary: ";
+   echo $position;
+   echo "\n";
 
-//   echo "</p>";
+   echo "</p>";
 
 
  }
