@@ -18,7 +18,7 @@ function populateResults(clients)
      newButton.innerText = clients;
 
     // add the new button
-    results = newButton;
+    results += newButton;
 
 }
 
