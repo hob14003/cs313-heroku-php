@@ -51,8 +51,12 @@ function createDetailView(text)
     let search = document.getElementById("query");
     search.parentNode.removeChild(search);
   
-
+    // show the details about the client
     clientlist.innerHTML = text;
+
+    // Change the heading name
+    let heading = document.getElementById("heading");
+    heading.innerText = "Client Details";
 
 }
 
