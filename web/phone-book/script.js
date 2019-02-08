@@ -9,7 +9,6 @@ let searchElement = document.getElementById("query");
  * ********* */
 function populateResults(clients)
 {
-
     console.log(clients);
     let results = document.getElementById("results");
 
@@ -18,7 +17,7 @@ function populateResults(clients)
      newButton.innerText = clients;
 
     // add the new button
-    results += newButton;
+    results.appendChild(newButton);
 
 }
 
