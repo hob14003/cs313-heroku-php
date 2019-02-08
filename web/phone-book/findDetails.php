@@ -25,8 +25,8 @@ try
 echo "<div class='container'>";
 
 //foreach ($db->query('SELECT username, phone FROM clients') as $row)
-// foreach ($db->query('SELECT username, phone FROM clients WHERE username LIKE' . '\'' . $client . '%\'') as $row)
-// {
+ foreach ($db->query('SELECT username, phone FROM clients WHERE username LIKE' . '\'' . $client . '%\'') as $row)
+ {
 //     $username =  $row['username'];
 //     $phoneNumber = $row['phone'];
 //     $position = $row['position'];
@@ -47,7 +47,7 @@ echo "<div class='container'>";
 //   echo "</p>";
 
 
-// }
+ }
 
 // echo "</div>";
 
