@@ -49,7 +49,7 @@ function createDetailView(text)
 
   
 
-    clientlist.appendChild(text);
+    clientlist.innerHTML = text;
 
 }
 
