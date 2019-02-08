@@ -49,7 +49,7 @@ echo "<div class='container'>";
  WHERE calls.client_id = clients.id') as $row)
  {
 
-  
+  $eName = $row['employees.username'];
 
  }
 
