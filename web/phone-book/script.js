@@ -35,8 +35,9 @@ fetch("findDetails.php", {
 
 
 /**********
+ * Author: Jesse Hillman
  * 
- * 
+ * Switch views to the detail view.
  * 
  * *********** */
 function createDetailView(text)
@@ -64,8 +65,10 @@ function createDetailView(text)
 
 
 /******************
+ * Author: Jesse Hillman
  * 
- * 
+ * Shows the clients that match
+ * the letters typed into the search
  * 
  * ********* */
 function populateResults(clients)
