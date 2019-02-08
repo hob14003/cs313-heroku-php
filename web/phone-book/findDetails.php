@@ -48,7 +48,7 @@ echo "<div class='container'>";
  FROM calls JOIN clients ON calls.client_id = clients.id JOIN employees ON calls.employee_id = employees.id
  WHERE calls.client_id = clients.id') as $row)
  {
-
+  echo $row;
   $eName = $row['eName'];
   echo "Last employee to call was " + $eName;
 
