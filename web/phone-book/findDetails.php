@@ -49,7 +49,7 @@ echo "<div class='container'>";
  WHERE calls.client_id = clients.id') as $row)
  {
   
-  $eName = $row['username'];
+  $eName = $row['employees.username'];
   echo "Last employee to call was " + $eName;
 
  }
