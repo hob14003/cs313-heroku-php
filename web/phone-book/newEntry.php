@@ -22,7 +22,13 @@
 <input type="submit" value="Submit new client">
 </form>
 
-
+<form>
+<h1>Enter Call History</h1>
+<input type="text" placeholder="Employee Name">
+<input type="text" placeholder="Client name">
+<input type="text" placeholder="Summary">
+<input type="submit" value="Submit Report">
+</form>
 
 
 </body>
