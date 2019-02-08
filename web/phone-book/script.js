@@ -6,7 +6,7 @@ searchElement.addEventListener("keyup",(client) => {
     var target = (client.target) ? client.target : client.srcElement;
     console.log(target.value);
 
-    let dbData = "";
+    let dbData = target.value;
 
     // fetch the list
     fetch("select-clients.php", {

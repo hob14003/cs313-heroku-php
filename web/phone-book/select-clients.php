@@ -2,9 +2,9 @@
 try
 {
     // hold the client name passed in;
- //  $client = $_POST["client"];
+   $client = $_POST["client"];
 
- //  echo $client;
+   echo $client;
 
   $dbUrl = getenv('DATABASE_URL');
 
