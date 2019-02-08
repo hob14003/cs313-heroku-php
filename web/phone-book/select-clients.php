@@ -28,7 +28,7 @@ foreach ($db->query('SELECT username, phone FROM clients WHERE username LIKE' . 
 {
   echo $row['username'];
   echo ' phone number: ' . $row['phone'];
-  echo '<br/>';
+  echo "\n"
 }
 
 
