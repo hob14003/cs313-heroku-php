@@ -43,6 +43,14 @@ function createDetailView(text)
 {
     console.log(text);
 
+    // clear it
+    window.innerHTML = "";
+
+    let newView = document.createElement(html);
+    newView.innerHTML = text;
+
+    window.appendChild(newView);
+
 }
 
 
