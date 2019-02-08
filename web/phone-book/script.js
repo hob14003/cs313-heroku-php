@@ -1,5 +1,4 @@
 let searchElement = document.getElementById("query");
-console.log(searchElement);
 
 
 
@@ -11,11 +10,10 @@ console.log(searchElement);
 function populateResults(clients)
 {
     console.log(clients);
-
     let results = document.getElementById("results");
 
     // create a new button
-    let newButton = document.createElement("BUTTON");
+    let newButton = document.createElement("BUTTON"); // this looks good
     newButton.value = clients; 
 
     // add the new button
