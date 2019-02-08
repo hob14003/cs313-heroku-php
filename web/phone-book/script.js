@@ -43,10 +43,13 @@ function createDetailView(text)
 {
     console.log(text);
 
-    // clear it
+    // clear list
   let clientlist = document.getElementById("clientlist");
   clientlist.innerHTML = "";
 
+  // clear search
+ let search = document.getElementById("query");
+search.innerHTML ="";
   
 
     clientlist.innerHTML = text;
