@@ -21,7 +21,9 @@ try
 
 echo $client;
 
-echo "<div class='container'>";
+//echo "<div class='container'>";
+
+   echo "<p>"
 
 
 //foreach ($db->query('SELECT username, phone FROM clients') as $row)
@@ -47,8 +49,9 @@ echo "<div class='container'>";
 
  }
 
+    echo "</p>";
 
- echo "</div>";
+// echo "</div>";
 
 
 }
