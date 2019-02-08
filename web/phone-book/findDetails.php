@@ -31,10 +31,10 @@ echo "<div class='container'>";
      $phoneNumber = $row['phone'];
      $position = $row['about'];
 
-//   echo "<p>"
-//   echo "Client name is ";
-//   echo $username;
-//   echo "\n";
+   echo "<p>"
+   echo "Client name is ";
+   echo $username;
+   echo "\n";
 
 //   echo "Phone Number: ";
 //   echo $phoneNumber;
