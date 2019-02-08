@@ -4,7 +4,6 @@ try
     // hold the client name passed in;
    $client = $_POST["client"];
 
-   echo $client;
 
   $dbUrl = getenv('DATABASE_URL');
 
@@ -25,7 +24,7 @@ try
 
 
 //foreach ($db->query('SELECT username, phone FROM clients') as $row)
-foreach ($db->query('SELECT username, phone FROM clients WHERE username LIKE' . '\'' . $_POST["client"] . '%\'') as $row)
+foreach ($db->query('SELECT username, phone FROM clients WHERE username LIKE' . '\'' . $client . '%\'') as $row)
 {
   echo 'user: ' . $row['username'];
   echo ' phone number: ' . $row['phone'];
