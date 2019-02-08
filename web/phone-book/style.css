@@ -29,6 +29,13 @@ button
       flex-direction:column;
   }
 
+
+  form
+  {
+      display:flex;
+      flex-direction:column;
+  }
+
 .container
 {
     font-family: 'Titillium Web', sans-serif;

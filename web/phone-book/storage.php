@@ -1,7 +1,7 @@
 <?php
 
 // navigation bar
-$navigation = array("Clients");
+$navigation = array("index.php","newEntry.php");
 
 
 
