@@ -1,6 +1,14 @@
 let searchElement = document.getElementById("query");
 
 
+// fetch the list
+fetch("select-clients.php", {
+    method: 'Post',
+    body: 'client= ',
+    headers: { 'Content-type': 'application/x-www-form-urlencoded' }
+})
+.then(res => res.text()).then(text => populateResults(text))
+.catch(error => console.error('DB error: ', error));
 
 
 
