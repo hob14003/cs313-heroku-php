@@ -33,7 +33,7 @@ foreach ($db->query('SELECT username, phone FROM clients WHERE username LIKE' . 
  // echo ' phone number: ' . $row['phone'];
  // echo "\n";
 
- echo "<button id='{$username}' onclick='findDetails()'>{$username} </button>";
+ echo "<button id='{$username}' onclick='findDetails(this)'>{$username} </button>";
 
 
 }
