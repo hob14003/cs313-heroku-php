@@ -25,31 +25,31 @@ try
 echo "<div class='container'>";
 
 //foreach ($db->query('SELECT username, phone FROM clients') as $row)
-foreach ($db->query('SELECT username, phone FROM clients WHERE username LIKE' . '\'' . $client . '%\'') as $row)
-{
-    $username =  $row['username'];
-    $phoneNumber = $row['phone'];
-    $position = $row['position'];
+// foreach ($db->query('SELECT username, phone FROM clients WHERE username LIKE' . '\'' . $client . '%\'') as $row)
+// {
+//     $username =  $row['username'];
+//     $phoneNumber = $row['phone'];
+//     $position = $row['position'];
 
-  echo "<p>"
-  echo "Client name is ";
-  echo $username;
-  echo "\n";
+//   echo "<p>"
+//   echo "Client name is ";
+//   echo $username;
+//   echo "\n";
 
-  echo "Phone Number: ";
-  echo $phoneNumber;
-  echo "\n";
+//   echo "Phone Number: ";
+//   echo $phoneNumber;
+//   echo "\n";
 
-  echo "Summary: ";
-  echo $position;
-  echo "\n";
+//   echo "Summary: ";
+//   echo $position;
+//   echo "\n";
 
-  echo "</p>";
+//   echo "</p>";
 
 
-}
+// }
 
-echo "</div>";
+// echo "</div>";
 
 
 }
