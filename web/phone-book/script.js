@@ -23,13 +23,13 @@ function findDetails(client)
 
 
     // for whether its internet explorer or other browsers
-    let target = (client.target) ? client.target : client.srcElement;
-    let clientName = target.value;
+  //  let target = (client.target) ? client.target : client.srcElement;
+  //  let clientName = target.value;
 
    // fetch the list
 fetch("findDetails.php", {
     method: 'Post',
-    body: 'client=' + clientName,
+    body: 'client=' + client,
     headers: { 'Content-type': 'application/x-www-form-urlencoded' }
 })
 .then(res => res.text()).then(text => populateResults(text))
