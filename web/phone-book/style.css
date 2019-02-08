@@ -23,7 +23,7 @@ button
     margin:2em;
 }
 
-  form
+  .form
   {
       display:flex;
       flex-direction:column;
