@@ -18,14 +18,19 @@ function populateResults(clients)
     let results = document.getElementById("results");
 
     // create a new button
-    let newButton = document.createElement("BUTTON"); // this looks good
-     newButton.innerText = clients;
+  //  let newButton = document.createElement("BUTTON"); // this looks good
+    // newButton.innerText = clients;
+
+    let newItem = document.createElement("p");
+    newItem.innerText = clients;
+
+
 
      // clear it
      results.innerHTML = "";
 
     // add the new button
-    results.appendChild(newButton);
+    results.appendChild(newItem);
 
 }
 
