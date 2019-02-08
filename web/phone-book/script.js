@@ -21,6 +21,7 @@ fetch("select-clients.php", {
 function findDetails(client)
 {
 
+    client = client.innerText;
 
     // for whether its internet explorer or other browsers
   //  let target = (client.target) ? client.target : client.srcElement;
