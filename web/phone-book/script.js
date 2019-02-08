@@ -2,6 +2,11 @@ let searchElement = document.getElementById("query");
 
 
 
+
+
+
+
+
 /******************
  * 
  * 
@@ -15,6 +20,9 @@ function populateResults(clients)
     // create a new button
     let newButton = document.createElement("BUTTON"); // this looks good
      newButton.innerText = clients;
+
+     // clear it
+     results = null;
 
     // add the new button
     results.appendChild(newButton);
