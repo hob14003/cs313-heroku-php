@@ -3,7 +3,7 @@ try
 {
     // hold the client name passed in;
    $client = $_POST["client"];
-
+    $client = $client.innerText;
 
   $dbUrl = getenv('DATABASE_URL');
 
