@@ -44,12 +44,12 @@ function createDetailView(text)
     console.log(text);
 
     // clear it
-    window.innerHTML = "";
+  let clientlist = document.getElementById("clientlist");
+  clientlist.innerHTML = "";
 
-    let newView = document.createElement(html);
-    newView.innerHTML = text;
+  
 
-    window.appendChild(newView);
+    clientlist.appendChild(text);
 
 }
 
