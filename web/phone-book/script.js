@@ -44,6 +44,7 @@ fetch("findDetails.php", {
  * *********** */
 function createDetailView(text)
 {
+    console.log(text);
 
 }
 
