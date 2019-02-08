@@ -14,7 +14,8 @@ searchElement.addEventListener("keyup",(client) => {
     // fetch the list
     fetch("select-clients.php", {
         method: 'Post',
-        body: JSON.stringify({client: dbData})
+        body: 'client=' + dbData
+        
     })
     .then(res => res.text()).then(text => console.log(text))
     .catch(error => console.error('DB error: ', error));
