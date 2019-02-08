@@ -19,7 +19,6 @@ try
 
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-echo $client;
 
 echo "<div class='container'>";
 
