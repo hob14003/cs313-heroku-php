@@ -44,7 +44,7 @@ echo "<div class='container'>";
  }
 
 
- foreach ($db->query('SELECT clients.username,employees.username,calls.client_id,calls.employee_id,calldate,summary 
+ foreach ($db->query('SELECT clients.username,employees.username AS eUser,calls.client_id,calls.employee_id,calldate,summary 
  FROM calls JOIN clients ON calls.client_id = clients.id JOIN employees ON calls.employee_id = employees.id
  WHERE calls.client_id = clients.id') as $row)
  {
@@ -52,7 +52,7 @@ echo "<div class='container'>";
   $eName = $row['calldate'];
 
   echo "\n";
-  echo "Last Called on " . $eName . "by " . $row['employees.username'];
+  echo "Last Called on " . $eName . "by " . $row['eUser'];
   echo "\n";
 
 
