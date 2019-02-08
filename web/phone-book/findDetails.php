@@ -33,15 +33,15 @@ echo "<div class='container'>";
    echo "<p>"
    echo "Client name is ";
    echo $username;
-   echo "\n";
+  // echo "\n";
 
    echo "Phone Number: ";
-   echo $phoneNumber;
-   echo "\n";
+  // echo $phoneNumber;
+  // echo "\n";
 
    echo "Summary: ";
-   echo $position;
-   echo "\n";
+  // echo $position;
+  // echo "\n";
 
    echo "</p>";
 
