@@ -6,6 +6,8 @@ searchElement.addEventListener("keyup",(client) => {
     var target = (client.target) ? client.target : client.srcElement;
     console.log(target.value);
 
+    $dbData = "";
+
     // fetch the list
     fetch("select-clients.php", {
         method: 'Post',
