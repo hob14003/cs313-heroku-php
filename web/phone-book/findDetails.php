@@ -33,8 +33,8 @@ echo "<div class='container'>";
 
    echo "<p>"
    echo "Client name is ";
-   echo $username;
-   echo "\n";
+ //  echo $username;
+ //  echo "\n";
 
 //   echo "Phone Number: ";
 //   echo $phoneNumber;
@@ -44,7 +44,7 @@ echo "<div class='container'>";
 //   echo $position;
 //   echo "\n";
 
-//   echo "</p>";
+   echo "</p>";
 
 
  }
