@@ -70,12 +70,11 @@ searchElement.addEventListener("keyup",(client) => {
 
     // holds the value to be selected
     let dbData = target.value;
-    
 
     // fetch the list
     fetch("select-clients.php", {
         method: 'Post',
-        body: 'client=' + dbData + 'cElement=' + target,
+        body: 'client=' + dbData,
         headers: { 'Content-type': 'application/x-www-form-urlencoded' }
     })
     .then(res => res.text()).then(text => populateResults(text))
