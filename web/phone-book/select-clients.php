@@ -25,7 +25,7 @@ try
 
 
 //foreach ($db->query('SELECT username, phone FROM clients') as $row)
-foreach ($db->query('SELECT username, phone FROM clients WHERE username LIKE' . ' ' . $_POST["client"]) as $row)
+foreach ($db->query('SELECT username, phone FROM clients WHERE username LIKE' . ' ' . $_POST["client"] . '%') as $row)
 {
   echo 'user: ' . $row['username'];
   echo ' phone number: ' . $row['phone'];
