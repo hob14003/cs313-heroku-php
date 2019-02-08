@@ -32,9 +32,21 @@ fetch("findDetails.php", {
     body: 'client=' + client,
     headers: { 'Content-type': 'application/x-www-form-urlencoded' }
 })
-.then(res => res.text()).then(text => populateResults(text))
+.then(res => res.text()).then(text => createDetailView(text))
 .catch(error => console.error('DB error: ', error));
 }
+
+
+/**********
+ * 
+ * 
+ * 
+ * *********** */
+function createDetailView(text)
+{
+
+}
+
 
 
 
