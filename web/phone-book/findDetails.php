@@ -1,3 +1,17 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer> </script>
+</head>
+
+
+<body>
+<!-- adds the navigation bar -->
+<?php include "populate.php" ?>
+<div class="buffer"> </div>
+
+
 <?php
 try
 {
@@ -21,22 +35,34 @@ try
 
 
 
-
+echo "<div class='container'>";
 
 //foreach ($db->query('SELECT username, phone FROM clients') as $row)
 foreach ($db->query('SELECT username, phone FROM clients WHERE username LIKE' . '\'' . $client . '%\'') as $row)
 {
     $username =  $row['username'];
     $phoneNumber = $row['phone'];
+    $position = $row['position'];
 
- // echo $row['username'];
- // echo ' phone number: ' . $row['phone'];
- // echo "\n";
+  echo "<p>"
+  echo "Client name is ";
+  echo $username;
+  echo "\n";
 
- echo "<button id='{$username}' onclick='findDetails()'>{$username} </button>";
+  echo "Phone Number: ";
+  echo $phoneNumber;
+  echo "\n";
+
+  echo "Summary: ";
+  echo $position;
+  echo "\n";
+
+  echo "</p>";
 
 
 }
+
+echo "</div>";
 
 
 }
@@ -50,3 +76,10 @@ catch (PDOException $ex)
 
 
 ?>
+
+
+</body>
+
+
+
+</html>

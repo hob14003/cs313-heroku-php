@@ -12,6 +12,29 @@ fetch("select-clients.php", {
 
 
 
+/***********
+ * Author: Jesse Hillman
+ * 
+ * // bring up a page with details about that person
+ * 
+ * ******** */
+function findDetails()
+{
+
+
+    // for whether its internet explorer or other browsers
+    let target = (client.target) ? client.target : client.srcElement;
+    let clientName = target.value;
+
+   // fetch the list
+fetch("findDetails.php", {
+    method: 'Post',
+    body: 'client=' + clientName,
+    headers: { 'Content-type': 'application/x-www-form-urlencoded' }
+})
+.then(res => res.text()).then(text => populateResults(text))
+.catch(error => console.error('DB error: ', error));
+}
 
 
 
@@ -25,20 +48,8 @@ function populateResults(clients)
     console.log(clients);
     let results = document.getElementById("results");
 
-    // create a new button
-  //  let newButton = document.createElement("BUTTON"); // this looks good
-    // newButton.innerText = clients;
-
- //   let newItem = document.createElement("p");
- //   newItem.innerText = clients;
-
-
-
      // clear it
      results.innerHTML = "";
-
-    // add the new button
-  //  results.appendChild(newItem);
 
     results.innerHTML = clients;
 
@@ -55,7 +66,7 @@ function populateResults(clients)
 searchElement.addEventListener("keyup",(client) => {
 
     // for whether its internet explorer or other browsers
-    var target = (client.target) ? client.target : client.srcElement;
+    let target = (client.target) ? client.target : client.srcElement;
 
     // holds the value to be selected
     let dbData = target.value;
