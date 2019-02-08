@@ -22,7 +22,7 @@ function populateResults(clients)
      newButton.innerText = clients;
 
      // clear it
-     results = null;
+     results.innerHTML = "";
 
     // add the new button
     results.appendChild(newButton);
