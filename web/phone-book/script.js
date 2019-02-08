@@ -4,7 +4,7 @@ searchElement.addEventListener("keyup",(client) => {
 
     // for whether its internet explorer or other browsers
     var target = (client.target) ? client.target : client.srcElement;
-    console.log(target.value);
+  //  console.log(target.value);
 
     // holds the value to be selected
     let dbData = target.value;
