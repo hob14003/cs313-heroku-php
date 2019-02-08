@@ -9,6 +9,7 @@ let searchElement = document.getElementById("query");
  * ********* */
 function populateResults(clients)
 {
+
     console.log(clients);
     let results = document.getElementById("results");
 
