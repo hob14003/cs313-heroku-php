@@ -17,7 +17,7 @@ function populateResults(clients)
      newButton.innerText = clients;
 
     // add the new button
-    results.appendChild(newButton);
+    results = newButton;
 
 }
 
