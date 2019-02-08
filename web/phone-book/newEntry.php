@@ -27,6 +27,8 @@
 <input type="text" placeholder="Employee Name">
 <input type="text" placeholder="Client name">
 <input type="text" placeholder="Summary">
+<input type="text" placeholder="Date">
+
 <input type="submit" value="Submit Report">
 </form>
 

@@ -41,8 +41,17 @@ echo "<div class='container'>";
    echo "Summary: ";
    echo $position;
    echo "\n";
+ }
 
 
+ foreach ($db->query('SELECT clients.username,employees.username,calls.client_id,calls.employee_id,calldate,summary 
+ FROM calls JOIN clients ON calls.client_id = clients.id JOIN employees ON calls.employee_id = employees.id
+ WHERE calls.client_id = clients.id')
+ {
+
+  $employee = $row['employees.username'];
+
+  echo "Last called by" + $employee;
 
  }
 
