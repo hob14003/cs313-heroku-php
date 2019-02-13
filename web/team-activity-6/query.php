@@ -50,6 +50,33 @@ try
     $scriptureId = $db->lastInsertId("scripture_id_seq");
 
 
+    foreach ($topicIds as $topicId)
+
+	{
+
+		echo "ScriptureId: $scriptureId, topicId: $topicId";
+
+
+
+		// Again, first prepare the statement
+
+		$statement = $db->prepare('INSERT INTO scripture_topic(scriptureId, topicId) VALUES(:scriptureId, :topicId)');
+
+
+
+		// Then, bind the values
+
+		$statement->bindValue(':scriptureId', $scriptureId);
+
+		$statement->bindValue(':topicId', $topicId);
+
+
+
+		$statement->execute();
+
+	}
+
+
 }
 catch (PDOException $ex)
 {
