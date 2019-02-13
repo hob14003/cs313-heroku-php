@@ -9,7 +9,7 @@ try
   $dbPort = "5432";
   $dbUser = "eeoypxkfqceele";
   $dbPassword = "8a8e822c95e1d6a4a2215c88ac4b20bc89f84ae1cc7480ce7212d82d1ba707e0";
-  $dbName = ltrim($dbOpts["path"],'/');
+  $dbName = "df3hvlpt6i3j3h";
 
   $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
