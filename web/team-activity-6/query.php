@@ -44,7 +44,10 @@ try
 
 
 
-	$statement->execute();
+    $statement->execute();
+    
+// get the new id
+    $scriptureId = $db->lastInsertId("scripture_id_seq");
 
 
 }
