@@ -91,7 +91,7 @@ header("Location: showTopics.php");
 
 
 // kill it
-die(); 
+//die(); 
 
 
 
