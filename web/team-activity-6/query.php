@@ -86,6 +86,13 @@ catch (PDOException $ex)
 
 
 
+// finally, redirect them to a new page to actually show the topics
+header("Location: showTopics.php");
+
+
+// kill it
+die(); 
+
 
 
 ?>
