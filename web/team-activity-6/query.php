@@ -31,9 +31,20 @@ try
 
 
   $query = 'INSERT INTO scripture(book, chapter, verse, content) VALUES(:book, :chapter, :verse, :content)';
-
 	$statement = $db->prepare($query);
 
+
+    $statement->bindValue(':book', $book);
+
+	$statement->bindValue(':chapter', $chapter);
+
+	$statement->bindValue(':verse', $verse);
+
+	$statement->bindValue(':content', $content);
+
+
+
+	$statement->execute();
 
 
 }
