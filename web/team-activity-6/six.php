@@ -105,7 +105,7 @@ catch (PDOException $ex)
 
 ?>
 
-<button type="submit" value="add to database">
+<input type="submit" value="Add to Database" />
 </form>
 
 
