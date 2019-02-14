@@ -22,12 +22,16 @@
 <input type="submit" value="Submit new client">
 </form>
 
-<form >
+<form action="addCall.php" method="post" >
 <h1>Enter Call History</h1>
-<input type="text" placeholder="Employee Name">
-<input type="text" placeholder="Client name">
-<input type="text" placeholder="Summary">
-<input type="text" placeholder="Date">
+<input type="text" name="EmpName" placeholder="Employee Name">
+<input type="text" name="EmpPhone" placeholder="Employee Phone">
+
+<input type="text" name="CName" placeholder="Client name">
+<input type="text" name="CPhone" placeholder="Client Phone">
+
+<input type="text" name="Summary" placeholder="Summary">
+<input type="text" name="Date" placeholder="Date">
 
 <input type="submit" value="Submit Report">
 </form>
