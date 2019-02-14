@@ -68,7 +68,7 @@
 
 <?php
 
-echo "<div class=\"container\"> <p>Call Successfully Added! $row </p> </div>";
+echo "<div class=\"container\"> <p>Call Successfully Added! </p> <p> $row </p> </div>";
 
 
 ?>
