@@ -46,11 +46,11 @@
         $ClientID =  $row['id'];
     }
 
-    $EmployeeId = "";
-    foreach ($db->query('SELECT id FROM employees WHERE username =' . '\'' . $emp) as $row)
-    {
-        $EmployeeId =  $row['id'];
-    }
+    // $EmployeeId = "";
+    // foreach ($db->query('SELECT id FROM employees WHERE username =' . '\'' . $emp) as $row)
+    // {
+    //     $EmployeeId =  $row['id'];
+    // }
 
 
 
