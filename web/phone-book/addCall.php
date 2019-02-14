@@ -20,7 +20,7 @@
     $cPhone = $_POST["CPhone"];
 
     $summary = $_POST["Summary"];
-    $summary = $_POST["Date"];
+    $date = $_POST["Date"];
     
 
 
@@ -40,23 +40,28 @@
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
-     $empSelect = 'Select id from clients where username=:cUsername AND phone=:cPhone;';
-     $statementEmp = $db->prepare($query);
-     $statementEmp->bindValue(':cUsername',$client);
-     $statementEmp->bindValue(':cPhone',$cPhone);
-     $statementEmp->execute();
-
-
     $ClientID = "";
+    foreach ($db->query('SELECT id FROM clients WHERE username =' . '\'' . $client) as $row)
+    {
+        $ClientID =  $row['id'];
+    }
 
-    // while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-	// {
+    $EmployeeId = "";
+    foreach ($db->query('SELECT id FROM employees WHERE username =' . '\'' . $emp) as $row)
+    {
+        $EmployeeId =  $row['id'];
+    }
 
-	
 
-    //   $ClientId =  $row['id'];
-        
-    // }
+    $query = 'INSERT INTO calls(client_id, employee_id, calldate,summary) VALUES(:CId, :empId, :calldate,:summary)';
+	$statement = $db->prepare($query);
+
+    $statement->bindValue(':CId', $ClientId);
+	$statement->bindValue(':empId', $EmployeeId);
+    $statement->bindValue(':calldate', $date);
+    $statement->bindValue(':summary', $summary);
+    $statement->execute();
+
 
 
 
