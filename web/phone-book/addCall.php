@@ -40,11 +40,11 @@
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
-    $empSelect = 'Select id from clients where username=:cUsername AND phone=:cPhone;';
-    $statementEmp = $db->prepare($query);
-    $statementEmp->bindValue(':cUsername',$client);
-    $statementEmp->bindValue(':cPhone',$cPhone);
-    $statementEmp->execute();
+    // $empSelect = 'Select id from clients where username=:cUsername AND phone=:cPhone;';
+    // $statementEmp = $db->prepare($query);
+    // $statementEmp->bindValue(':cUsername',$client);
+    // $statementEmp->bindValue(':cPhone',$cPhone);
+    // $statementEmp->execute();
 
 
     $ClientID = "";
