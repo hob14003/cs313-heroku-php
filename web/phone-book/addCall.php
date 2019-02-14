@@ -10,10 +10,11 @@
 <!-- adds the navigation bar -->
 <?php include "populate.php" ?>
 
+<div class="buffer"> </div>
+
 
 <?php
 
-<div class="buffer"> </div>
 
 
 
