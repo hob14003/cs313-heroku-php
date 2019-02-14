@@ -12,6 +12,15 @@
 
 
 <?php
+
+<div class="buffer"> </div>
+
+
+
+try
+{
+
+
     // hold the client name passed in;
     $emp = $_POST["EmpName"];
     $empPhone = $_POST["EmpPhone"];
@@ -52,8 +61,12 @@
     //     $EmployeeId =  $row['id'];
     // }
 
-
-
+    }
+    catch (PDOException $ex)
+    {
+      echo 'Error!: ' . $ex->getMessage();
+      die();
+    }
 
 
     // $query = 'INSERT INTO calls(client_id, employee_id, calldate,summary) VALUES(:CId, :empId, :calldate,:summary)';
