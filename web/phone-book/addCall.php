@@ -17,10 +17,6 @@
 
 
 
-try
-{
-
-
     // hold the client name passed in;
     $emp = $_POST["EmpName"];
     $empPhone = $_POST["EmpPhone"];
@@ -33,40 +29,6 @@ try
     
 
 
-
-    $dbUrl = getenv('DATABASE_URL');
-
-    $dbOpts = parse_url($dbUrl);
-  
-    $dbHost = $dbOpts["host"];
-    $dbPort = $dbOpts["port"];
-    $dbUser = $dbOpts["user"];
-    $dbPassword = $dbOpts["pass"];
-    $dbName = ltrim($dbOpts["path"],'/');
-  
-    $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-  
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-
-    $ClientID = "";
-    foreach ($db->query('SELECT id FROM clients WHERE username =' . '\'' . $client) as $row)
-    {
-        $ClientID =  $row['id'];
-    }
-
-    // $EmployeeId = "";
-    // foreach ($db->query('SELECT id FROM employees WHERE username =' . '\'' . $emp) as $row)
-    // {
-    //     $EmployeeId =  $row['id'];
-    // }
-
-    }
-    catch (PDOException $ex)
-    {
-      echo 'Error!: ' . $ex->getMessage();
-      die();
-    }
 
 
     // $query = 'INSERT INTO calls(client_id, employee_id, calldate,summary) VALUES(:CId, :empId, :calldate,:summary)';
@@ -90,7 +52,12 @@ try
 <?php
 
 echo "<div class=\"container\"> <p>Call Successfully Added! </p> <p> </p> </div>";
-
+echo $emp;
+echo $empPhone;
+echo $client;
+echo $cPhone;
+echo $summary;
+echo $date;
 
 ?>
 
