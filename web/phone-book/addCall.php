@@ -53,12 +53,12 @@
 <?php
 
 echo "<div class=\"container\"> <p>Call Successfully Added! </p> <p> </p> </div>";
-// echo $emp;
-// echo $empPhone;
-// echo $client;
-// echo $cPhone;
-// echo $summary;
-// echo $date;
+echo $emp;
+echo $empPhone;
+echo $client;
+echo $cPhone;
+echo $summary;
+echo $date;
 
 ?>
 
