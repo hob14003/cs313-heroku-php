@@ -49,14 +49,14 @@
 
     $ClientID = "";
 
-    while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-	{
+    // while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+	// {
 
 	
 
-      $ClientId =  $row['id'];
+    //   $ClientId =  $row['id'];
         
-    }
+    // }
 
 
 
@@ -68,7 +68,7 @@
 
 <?php
 
-echo "<div class=\"container\"> <p>Call Successfully Added! </p> <p> $row </p> </div>";
+echo "<div class=\"container\"> <p>Call Successfully Added! </p> <p> </p> </div>";
 
 
 ?>
