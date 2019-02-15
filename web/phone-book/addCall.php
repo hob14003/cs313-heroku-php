@@ -53,18 +53,16 @@
     
     
     $ClientId = "";
-  
+
+
+
     
-    $sql = "SELECT id FROM clients WHERE username" ."=" . "\'" . $client . "\';";
-    $result = $conn->query($sql);
-    
-    }
-    catch (PDOException $ex)
-    {
-      echo 'Error!: ' . $ex->getMessage();
-      die();
-    }
-    
+ foreach ($db->query('SELECT username, phone, about FROM clients WHERE username LIKE' . '\'' . $client . '%\'') as $row)
+ {
+     $username =  $row['username'];
+
+
+ }
 
 
 
@@ -95,7 +93,7 @@
 
 echo "<div class=\"container\"> <p>Call Successfully Added! </p> <p> </p> </div>";
 
-echo $result . helloWorld;
+echo $username . helloWorld;
 
 ?>
 
