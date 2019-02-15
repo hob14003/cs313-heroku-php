@@ -57,9 +57,9 @@
 
 
     
- foreach ($db->query('SELECT username, phone, about FROM clients WHERE username LIKE' . '\'' . $client . '%\'') as $row)
+ foreach ($db->query('SELECT id FROM clients WHERE username LIKE' . '\'' . $client . '%\'') as $row)
  {
-     $username =  $row['username'];
+     $username =  $row['id'];
 
 
  }
