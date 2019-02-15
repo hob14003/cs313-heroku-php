@@ -120,8 +120,6 @@ catch (PDOException $ex)
 
 echo "<div class=\"container\"> <p>Call Successfully Added! </p> <p> </p> </div>";
 
-echo $ClientId . helloWorld;
-echo $empId;
 
 ?>
 
