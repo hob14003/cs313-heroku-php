@@ -51,16 +51,28 @@
     
     
     $ClientId = "";
-
+    $empId = "";
 
 
     
  foreach ($db->query('SELECT id FROM clients WHERE username' . '=' . '\'' . $client . '\'') as $row)
  {
-     $username =  $row['id'];
+     $ClientId =  $row['id'];
 
 
  }
+
+
+
+     
+ foreach ($db->query('SELECT id FROM employees WHERE username' . '=' . '\'' . $emp . '\'') as $row)
+ {
+     $empId =  $row['id'];
+
+
+ }
+
+
 
 
  
@@ -100,7 +112,8 @@ catch (PDOException $ex)
 
 echo "<div class=\"container\"> <p>Call Successfully Added! </p> <p> </p> </div>";
 
-echo $username . helloWorld;
+echo $ClientId . helloWorld;
+echo $empId;
 
 ?>
 
