@@ -56,7 +56,7 @@
     $ClientId = "";
     
     
-     foreach ($db->query('SELECT id FROM clients WHERE username =' . '\'' . $client . '\'') as $row)
+     foreach ($db->query('SELECT id FROM clients WHERE username=' . '\'' . $client . '\'') as $row)
      {
          $ClientId =  $row['id'];
      }
@@ -100,7 +100,7 @@
 
 echo "<div class=\"container\"> <p>Call Successfully Added! </p> <p> </p> </div>";
 
-echo $ClientId;
+echo $ClientId . helloWorld;
 
 ?>
 
