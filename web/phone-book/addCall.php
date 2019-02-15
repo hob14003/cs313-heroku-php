@@ -76,6 +76,22 @@
 
 
  
+     $query = 'INSERT INTO calls(client_id, employee_id, calldate,summary) VALUES(:CId, :empId, :calldate,:summary)';
+	 $statement = $db->prepare($query);
+
+     $statement->bindValue(':CId', $ClientId);
+	 $statement->bindValue(':empId', $empId);
+     $statement->bindValue(':calldate', $date);
+     $statement->bindValue(':summary', $summary);
+     $statement->execute();
+
+
+
+
+
+
+
+ 
 }
 catch (PDOException $ex)
 {
@@ -90,14 +106,6 @@ catch (PDOException $ex)
 
 
 
-    // $query = 'INSERT INTO calls(client_id, employee_id, calldate,summary) VALUES(:CId, :empId, :calldate,:summary)';
-	// $statement = $db->prepare($query);
-
-    // $statement->bindValue(':CId', $ClientId);
-	// $statement->bindValue(':empId', $EmployeeId);
-    // $statement->bindValue(':calldate', $date);
-    // $statement->bindValue(':summary', $summary);
-    // $statement->execute();
 
 
 
