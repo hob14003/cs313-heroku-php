@@ -54,12 +54,10 @@
     echo "<div class='container'>";
     
     $ClientId = "";
-    
-    
-    $db->query('SELECT id FROM clients WHERE username=' . '\'' . $client . '\'') as $row)
   
-    $ClientId = $row;
     
+    $sql = "SELECT id FROM clients WHERE username=" . $client;
+    $result = $conn->query($sql);
     
     }
     catch (PDOException $ex)
@@ -98,7 +96,7 @@
 
 echo "<div class=\"container\"> <p>Call Successfully Added! </p> <p> </p> </div>";
 
-echo $ClientId . helloWorld;
+echo $result . helloWorld;
 
 ?>
 
