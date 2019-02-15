@@ -56,12 +56,9 @@
     $ClientId = "";
     
     
-     foreach ($db->query('SELECT id FROM clients WHERE username=' . '\'' . $client . '\'') as $row)
-     {
-         echo $row['id'];
-         $ClientId =  $row['id'];
-     }
-    
+    $db->query('SELECT id FROM clients WHERE username=' . '\'' . $client . '\'') as $row)
+  
+    $ClientId = $row;
     
     
     }
