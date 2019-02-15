@@ -51,9 +51,14 @@ echo "<div class='container'>";
   
   $eName = $row['calldate'];
 
+
+  echo "<div class='container'>";
+
   echo "\n";
   echo "Last Called on " . $eName;
   echo "\n";
+
+  echo "</div>";
 
 
  }
