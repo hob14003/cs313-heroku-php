@@ -55,7 +55,7 @@
     $ClientId = "";
   
     
-    $sql = "SELECT id FROM clients WHERE username" ."=" . "'" . $client . "';";
+    $sql = "SELECT id FROM clients WHERE username" ."=" . "\'" . $client . "\';";
     $result = $conn->query($sql);
     
     }
