@@ -23,7 +23,6 @@ try
 
 
 
-//foreach ($db->query('SELECT username, phone FROM clients') as $row)
 foreach ($db->query('SELECT username, phone FROM clients WHERE username LIKE' . '\'' . $client . '%\'') as $row)
 {
     $username =  $row['username'];
