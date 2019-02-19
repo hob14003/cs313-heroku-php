@@ -15,7 +15,7 @@ function verifyLogin()
 //   alert(password);
 
    // fetch the list
-   fetch("findDetails.php", {
+   fetch("verify.php", {
       method: 'Post',
       body: 'username=' + username + '&' + 'password=' + password,
       headers: { 'Content-type': 'application/x-www-form-urlencoded' }
@@ -37,6 +37,7 @@ function verifyLogin()
 function createDetailView(text)
 {
    alert("we are in create View");
+   console.log(text);
 
 }
 
