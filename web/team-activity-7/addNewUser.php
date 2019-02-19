@@ -14,7 +14,7 @@
 
 
 <?php
-
+$newURL = "signin.php";
 
 
 
@@ -88,9 +88,10 @@ catch (PDOException $ex)
 
 <?php
 
-echo "<div class=\"container\"> <p>Call Successfully Added! </p> <p> </p> </div>";
+echo "<div class=\"container\"> <p>User Successfully Added! </p> <p> </p> </div>";
+header('Location: ' . $newURL);
 
-
+die();
 ?>
 
 
