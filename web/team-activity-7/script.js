@@ -12,7 +12,7 @@ function verifyLogin()
    let password = document.getElementById("password").value;
 
 //   alert(username);
-//   alert(password);
+   alert(password);
 
    // fetch the list
    fetch("verify.php", {
