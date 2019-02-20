@@ -24,6 +24,7 @@ try
 
 
 //foreach ($db->query('SELECT username, password FROM auth WHERE username' . '=' . '\''. $username . '\''  . ';'  ) as $row)
+//foreach ($db->query('SELECT username FROM auth WHERE username LIKE' . '\'' . $username . '%\'') as $row)
 foreach ($db->query('SELECT username FROM auth WHERE username LIKE' . '\'' . $username . '%\'') as $row)
 {
      $username =  $row['username'];
