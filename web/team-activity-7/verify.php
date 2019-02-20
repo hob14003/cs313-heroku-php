@@ -4,8 +4,6 @@ try
     // hold the client name passed in;
    $username = $_POST["username"];
  //  $password = $_POST["password"];
-
-
  //  $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
   $dbUrl = getenv('DATABASE_URL');
@@ -26,19 +24,16 @@ try
 
 
 //foreach ($db->query('SELECT username, password FROM auth WHERE username' . '=' . '\''. $username . '\''  . ';'  ) as $row)
-foreach ($db->query('SELECT username, password FROM auth WHERE username LIKE' . '\'' . $username . '%\'') as $row)
+foreach ($db->query('SELECT username FROM auth WHERE username LIKE' . '\'' . $username . '%\'') as $row)
 {
      $username =  $row['username'];
-     $password =  $row['password'];
+  //   $password =  $row['password'];
 
 
    echo "Hash is ";
    echo $username;
 
-
-
-   echo "Password is ";
-   echo $password;
+   //echo $password;
 
 
 }
