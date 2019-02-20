@@ -2,7 +2,7 @@
 try
 {
     // hold the client name passed in;
-   $username = $_POST["username"];
+   $username = $_POST['username'];
  //  $password = $_POST["password"];
  //  $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
@@ -20,8 +20,22 @@ try
 
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+  echo "made it this far";
 
-   echo "Hello world";
+
+//foreach ($db->query('SELECT username, password FROM auth WHERE username' . '=' . '\''. $username . '\''  . ';'  ) as $row)
+//foreach ($db->query('SELECT username FROM auth WHERE username LIKE' . '\'' . $username . '%\'') as $row)
+foreach ($db->query('SELECT * FROM auth WHERE username' . '=' . '\'' . $username . '%\'') as $row)
+{
+     $results =  $row['username'];
+   //   $password = $row['password'];
+
+   echo "Hash is ";
+   echo $results;
+ //  echo $password;
+
+}
+
 
 
 
