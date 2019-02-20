@@ -17,7 +17,7 @@ function verifyLogin()
    // fetch the list
    fetch("verify.php", {
       method: 'Post',
-      body: 'username=' + username + 'password=' + password,
+      body: 'username=' + username + '&' + 'password=' + password + '\'',
       headers: { 'Content-type': 'application/x-www-form-urlencoded' }
   })
   .then(res => res.text()).then(text => createDetailView(text))
