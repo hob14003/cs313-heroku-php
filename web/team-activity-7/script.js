@@ -11,17 +11,13 @@ function verifyLogin()
    let username = document.getElementById("name").value;
    let password = document.getElementById("password").value;
 
+//   alert(username);
    alert(password);
-
-   const dbData = new FormData();
-    dbData.append(
-      username, password,
-    );
 
    // fetch the list
    fetch("verify.php", {
       method: 'Post',
-      body: dbData,
+      body: 'username=' + username,
       headers: { 'Content-type': 'application/x-www-form-urlencoded' }
   })
   .then(res => res.text()).then(text => createDetailView(text))
