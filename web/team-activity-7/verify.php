@@ -27,11 +27,11 @@ try
 //foreach ($db->query('SELECT username FROM auth WHERE username LIKE' . '\'' . $username . '%\'') as $row)
 foreach ($db->query('SELECT username FROM auth WHERE username LIKE' . '\'' . $username . '%\'') as $row)
 {
-     $username =  $row['username'];
+     $results =  $row['username'];
    //   $password = $row['password'];
 
    echo "Hash is ";
-   echo $username;
+   echo $results;
  //  echo $password;
 
 }
