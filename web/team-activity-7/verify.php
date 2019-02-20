@@ -2,8 +2,8 @@
 try
 {
     // hold the client name passed in;
-   $username = $_POST["Name"];
-   $password = $_POST["Password"];
+   $username = $_POST["name"];
+   $password = $_POST["pass"];
 
 
  //  $passwordHash = password_hash($password, PASSWORD_DEFAULT);
