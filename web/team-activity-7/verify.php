@@ -31,7 +31,6 @@ foreach ($db->query('SELECT username,password FROM auth WHERE username LIKE' . '
 
    echo "Hash is ";
    echo $username;
-
    echo $password;
 
 }
