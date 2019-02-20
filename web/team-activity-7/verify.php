@@ -48,7 +48,7 @@ try
 catch (PDOException $ex)
 {
   echo 'Error!: ' . $ex->getMessage();
-  die();
+ // die();
 }
 
 
