@@ -26,7 +26,7 @@ try
    echo $username;
 
 
-     foreach ($db->query('SELECT username, password FROM auth WHERE username' . '=' . $username  . ';'  ) as $row)
+     foreach ($db->query('SELECT username, password FROM auth WHERE username' . '=' . '\''. $username . '\''  . ';'  ) as $row)
 {
      $username =  $row['username'];
      $password =  $row['password'];
