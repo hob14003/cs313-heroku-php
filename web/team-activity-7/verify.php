@@ -24,37 +24,18 @@ try
 
 
 //foreach ($db->query('SELECT username, password FROM auth WHERE username' . '=' . '\''. $username . '\''  . ';'  ) as $row)
-foreach ($db->query('SELECT username FROM auth WHERE username LIKE' . '\'' . $username . '%\'') as $row)
+foreach ($db->query('SELECT username,password FROM auth WHERE username LIKE' . '\'' . $username . '%\'') as $row)
 {
      $username =  $row['username'];
-  //   $password =  $row['password'];
-
+      $password = $row['password'];
 
    echo "Hash is ";
    echo $username;
 
-   //echo $password;
-
+   echo $password;
 
 }
 
-//  foreach ($db->query('SELECT username, password FROM auth WHERE username' . '=' . $username . ' AND ' . 'password=' . $passwordHash . ';'  ) as $row)
-//  {
-
-  
-
-//      $username =  $row['username'];
-//      $password =  $row['password'];
-
-
-//    echo "Hash is ";
-//    echo $username;
-
-
-
-//    echo "Password is ";
-//    echo $password;
-//  }
 
 
 
