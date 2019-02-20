@@ -1,12 +1,12 @@
 <?php
-try
-{
-    // hold the client name passed in;
-   $username = $_POST["Name"];
-   $password = $_POST["Password"];
-   $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+// try
+// {
+//     // hold the client name passed in;
+//    $username = $_POST["Name"];
+//    $password = $_POST["Password"];
+//    $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
-    echo "made it this far";
+//     echo "made it this far";
 
 //   $dbUrl = getenv('DATABASE_URL');
 
@@ -48,15 +48,15 @@ try
 
 
 
-}
-catch (PDOException $ex)
-{
-  echo 'Error!: ' . $ex->getMessage();
-  die();
-}
+// }
+// catch (PDOException $ex)
+// {
+//   echo 'Error!: ' . $ex->getMessage();
+//   die();
+// }
 
 
-
+echo "Hello world";
 
 ?>
 
