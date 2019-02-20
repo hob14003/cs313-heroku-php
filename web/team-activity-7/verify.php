@@ -23,10 +23,6 @@ try
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
-echo "<div class='container'>";
-
-
-
  foreach ($db->query('SELECT username, password FROM auth WHERE username' . '=' . $username . ' AND ' . 'password=' . $passwordHash . ';'  ) as $row)
  {
 
@@ -38,12 +34,12 @@ echo "<div class='container'>";
 
    echo "Hash is ";
    echo $username;
-   echo "\n";
+
 
 
    echo "Password is ";
    echo $password;
-   echo "\n";
+
 
 
 
@@ -51,8 +47,6 @@ echo "<div class='container'>";
  }
 
 
-
- echo "</div>";
 
 
 }
