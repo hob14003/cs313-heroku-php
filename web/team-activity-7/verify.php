@@ -23,27 +23,23 @@ try
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
- foreach ($db->query('SELECT username, password FROM auth WHERE username' . '=' . $username . ' AND ' . 'password=' . $passwordHash . ';'  ) as $row)
- {
+//  foreach ($db->query('SELECT username, password FROM auth WHERE username' . '=' . $username . ' AND ' . 'password=' . $passwordHash . ';'  ) as $row)
+//  {
 
   
 
-     $username =  $row['username'];
-     $password =  $row['password'];
+//      $username =  $row['username'];
+//      $password =  $row['password'];
 
 
-   echo "Hash is ";
-   echo $username;
-
-
-
-   echo "Password is ";
-   echo $password;
+//    echo "Hash is ";
+//    echo $username;
 
 
 
-
- }
+//    echo "Password is ";
+//    echo $password;
+//  }
 
 
 
