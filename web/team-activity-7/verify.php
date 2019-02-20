@@ -20,10 +20,8 @@ try
 
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-  echo "made it this far";
 
-
-   echo $username;
+   echo "Hello world";
 
 
 
