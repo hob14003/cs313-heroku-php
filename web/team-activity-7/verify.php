@@ -4,7 +4,9 @@ try
     // hold the client name passed in;
    $username = $_POST["Name"];
    $password = $_POST["Password"];
-   $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+
+
+ //  $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
 //   $dbUrl = getenv('DATABASE_URL');
 
@@ -21,7 +23,7 @@ try
 //   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
   echo "made it this far";
-   echo $passwordHash;
+   echo $password;
 
 //  foreach ($db->query('SELECT username, password FROM auth WHERE username' . '=' . $username . ' AND ' . 'password=' . $passwordHash . ';'  ) as $row)
 //  {
