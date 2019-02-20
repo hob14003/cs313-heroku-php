@@ -37,6 +37,7 @@ function verifyLogin()
 function createDetailView(text)
 {
    alert("we are in create View");
+   alert(text);
    console.log(text);
 
 }
