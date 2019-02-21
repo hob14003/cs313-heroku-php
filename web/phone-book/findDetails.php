@@ -4,6 +4,7 @@ try
     // hold the client name passed in;
    $client = $_POST["client"];
     
+   $specialId = 1;
 
   $dbUrl = getenv('DATABASE_URL');
 
@@ -42,6 +43,17 @@ echo "<div class='container'>";
    echo $position;
    echo "\n";
  }
+
+
+
+ foreach ($db->query('SELECT id FROM clients WHERE username LIKE' . '\'' . $client . '%\'') as $row)
+ {
+$specialId = $row['id'];
+
+ }
+
+
+
 
 // get the call information
  foreach ($db->query('SELECT clients.username,employees.username AS eUser,calls.client_id,calls.employee_id,calldate,summary 
