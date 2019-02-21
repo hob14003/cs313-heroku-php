@@ -58,7 +58,7 @@ $specialId = $row['id'];
 // get the call information
  foreach ($db->query('SELECT clients.username,employees.username AS eUser,calls.client_id,calls.employee_id,calldate,summary 
  FROM calls JOIN clients ON calls.client_id = clients.id JOIN employees ON calls.employee_id = employees.id
- WHERE calls.client_id= ' . '\'' . '1' . '\''
+ WHERE calls.client_id= ' . '\'' . $specialId . '\''
  ) as $row)
  {
   
