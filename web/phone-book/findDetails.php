@@ -1,3 +1,6 @@
+<?php session_start(); ?>
+
+
 <?php
 try
 {
@@ -24,6 +27,27 @@ try
 echo "<div class='container'>";
 
 
+// using session
+if (array_key_exists('cartItems',$_SESSION) && !empty($_SESSION['cartItems']))
+{
+   // set it
+   $_SESSION["cartItems"] = $client;
+
+
+}
+else
+{
+
+   // set it
+    $_SESSION["cartItems"] = $client;
+}
+
+
+
+
+
+
+
 
  foreach ($db->query('SELECT username, phone, about FROM clients WHERE username LIKE' . '\'' . $client . '%\'') as $row)
  {
@@ -45,8 +69,8 @@ echo "<div class='container'>";
  }
 
 
-
- foreach ($db->query('SELECT id FROM clients WHERE username LIKE' . '\'' . $client . '%\'') as $row)
+// using the session
+ foreach ($db->query('SELECT id FROM clients WHERE username LIKE' . '\'' . $_SESSION["cartItems"] . '%\'') as $row)
  {
 $specialId = $row['id'];
 
